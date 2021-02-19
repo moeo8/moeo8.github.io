@@ -1,123 +1,97 @@
+
+<!DOCTYPE html>
 <html>
-
-<head>
-    <!-- 防止浏览器缓存 -->
-<meta http-equiv="pragma" content="no-cache"> 
-<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
-<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
-
-<!-- ?????? -->
+  <head>
     
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>
-    分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质 | 温故而知新
-</title>
-<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613753834254">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet">
+<meta charset="utf-8" >
+
+<title>分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质 | 温故而知新</title>
+<meta name="description" content="The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
+&lt;br&gt;
+宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613753987639">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
-<!-- js -->
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://moeo8.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
 
-    
-</head>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-<body>
-    <div class="main">
-        <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <a href="https://moeo8.github.io">
-                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613753834254" alt="">
-            </a>
-            <div class="site-title">
-                <h1>
-                    温故而知新
-                </h1>
-            </div>
-        </div>
-        <span class="menu-btn fa fa-align-justify"></span>
-        <div class="menu-container">
-            <ul>
-                
-                    
-                            <li>
-                                <a href="/" class="menu">
-                                    首页
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/archives" class="menu">
-                                    归档
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="/tags" class="menu">
-                                    标签
-                                </a>
-                            </li>
-                            
-                                
-                    
-                            <li>
-                                <a href="https://moeo8.github.io/about" class="menu">
-                                    关于
-                                </a>
-                            </li>
-                            
-                                
-            </ul>
-        </div>
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://moeo8.github.io">
+        <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613753987639" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://moeo8.github.io">
+        <h1 class="site-title">温故而知新</h1>
+      </a>
     </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
 </div>
 
-<script>
-    $(document).ready(function() {
-        $(".menu-btn").click(function() {
-            $(".menu-container").slideToggle();
-        });
-        $(window).resize(function() {
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://moeo8.github.io/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
 
-            if (window.matchMedia('(min-width: 960px)').matches) {
-                $(".menu-container").css('display', 'block')
-            } else {
-                $(".menu-container").css('display', 'none')
-            }
 
-        });
-    });
-</script>
-
-        <div id="main-content" class="post-detail main-container">
-            <!-- left -->
-            <div id="content" class="main-container-left">
-                <article class="post i-card">
-                    <h2 class="post-title">
-                        分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质
-                    </h2>
-                    <div class="post-info">
-                        <time class="post-time">2021-02-20</time>
-                        
-                    </div>
-                    
-                    <div class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/QCenjoyLL/orange@latest/2020/12/03/6eed3cc27dbed110d9799e0eba3c4c6f.png')"></div>
-                    
-                    <div class="post-content">
-                        <h4 id="01-池田幸福思想的哲学原点">01 池田幸福思想的哲学原点</h4>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://cdn.jsdelivr.net/gh/QCenjoyLL/orange@latest/2020/12/03/6eed3cc27dbed110d9799e0eba3c4c6f.png')">
+            </div>
+          
+          <h2 class="post-title">分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-02-20</span>
+            
+          </div>
+          <div class="post-content">
+            <h4 id="01-池田幸福思想的哲学原点">01 池田幸福思想的哲学原点</h4>
 <p>人是幸福的出发点和终点，是目的也是手段。可以说，人是池田幸福思想的哲学原点和核心。人应该像人那样有尊严和价值，在实践中改善德性进而实现生活世界的和谐，是池田大作幸福思想的哲学理念。池田幸福思想的哲学原点包括相互关联和支撑的三个方面：<br>
 第一，幸福是人生的最高理想。池田大作关注人，在他看来，幸福是人生的目的，生命的意义在于追求幸福。“人生的目的是什么？是幸福。佛法也好、信心也好，目的都是幸福。”幸福是人对自我人生的自觉与把握，而对于幸福的思考就是幸福生活的一部分。“人生是为了什么？——能回答这种终极性问题的人就是幸福的人。我认为从某种意义上来说是自觉自己的使命，认真活着，执着奋斗。”不仅如此，池田大作把人类各种文化形式，包括一切有意义的实践活动都看作是追求幸福的结果，各种文化形式及人的活动的意义在于使人获得美好的生活，幸福是各种文化形式及人的活动的目的。<br>
 人生如何过，怎样才能过最好的人生——对所有人来说这是根本性问题，只要活着就无法回避这个问题。对于这个问题的探究是诸哲学、思想和宗教，而政治、经济和科学等归根结蒂也离不开这个问题，无一例外地无非都是人谋求幸福生活的手段。<br>
@@ -187,114 +161,59 @@
 总的来说，有关幸福的思想涵盖了池田大作丰繁理论与广泛实践的基本理念，是撬动其教育、文化、和平等诸思想及实践的阿基米德支点，在更深层次上体现了他对人和社会本质的理解，并在很大程度上推敲并回应了幸福本质中“目的性与手段性”“个性与社会文化性”“过程性与结果性”“共性与个性”“生理性与心理性”“物质性与精神性”“理想性与现实性”的相互影响与对立统一，通过哲学原点、心理指向、社会理念与伦理精神诠释了现代人对“何为美好生活”的理解，对于提升现代人的生命质量、改善现代人的生活状态具有独特而深远的启示。</p>
 <p>原标题：《池田大作幸福思想的几个支点 ——兼谈幸福的本质》</p>
 
-                    </div>
-                </article>
-                <!--  -->
-                
-                <div class="next-post">
-                    <div class="next">下一篇</div>
-                    <a href="https://moeo8.github.io/hello-gridea/">
-                        <h3 class="post-title">
-                            Hello Gridea
-                        </h3>
-                    </a>
-                </div>
-                
-                <div id="disqus_thread"></div>
-                <div id="gitalk-container"></div>
-                <div id="vcomments"></div>
-                <div class="site-footer">
-  ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> |
-  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://moeo8.github.io/hello-gridea/">
+              <h3 class="post-title">
+                下一篇：Hello Gridea
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
+<br>
+宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
 </div>
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-            </div>
-            <!-- middle -->
-            <div class="main-container-middle"></div>
-            <!-- right -->
-            <div id="sidebar" class="main-container-right">
-                
-                <!-- toc -->
-                
-    <div class="toc-card i-card ">
-        <div class="toc-title i-card-title">目录</div>
-        <div class="toc-content">
-            <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#01-%E6%B1%A0%E7%94%B0%E5%B9%B8%E7%A6%8F%E6%80%9D%E6%83%B3%E7%9A%84%E5%93%B2%E5%AD%A6%E5%8E%9F%E7%82%B9">01 池田幸福思想的哲学原点</a></li>
-<li><a href="#02-%E6%B1%A0%E7%94%B0%E5%B9%B8%E7%A6%8F%E6%80%9D%E6%83%B3%E7%9A%84%E5%BF%83%E7%90%86%E6%8C%87%E5%90%91">02 池田幸福思想的心理指向</a></li>
-<li><a href="#03-%E6%B1%A0%E7%94%B0%E5%B9%B8%E7%A6%8F%E6%80%9D%E6%83%B3%E7%9A%84%E7%A4%BE%E4%BC%9A%E7%90%86%E5%BF%B5">03 池田幸福思想的社会理念</a></li>
-<li><a href="#04-%E6%B1%A0%E7%94%B0%E5%B9%B8%E7%A6%8F%E6%80%9D%E6%83%B3%E7%9A%84%E4%BC%A6%E7%90%86%E7%B2%BE%E7%A5%9E">04 池田幸福思想的伦理精神</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 
-        </div>
-        <script>
-            function locateCatelogList() {
-                /*获取文章目录集合,可通过:header过滤器*/
-                var alis = $('.post-content :header');
-                /*获取侧边栏目录列表集合**/
-                var sidebar_alis = $('.markdownIt-TOC a');
-                /*获取滚动条到顶部的距离*/
-                var scroll_height = $(window).scrollTop();
-                for (var i = 0; i < alis.length; i++) {
-                    /*获取锚点集合中的元素分别到顶点的距离*/
-                    var a_height = $(alis[i]).offset().top;
-                    if (a_height < scroll_height) {
-                        /*高亮显示*/
-                        sidebar_alis.removeClass('on');
-                        $(sidebar_alis[i]).addClass('on');
-                    }
-                }
-            }
-            $(function() {
-                /*绑定滚动事件 */
-                $(window).bind('scroll', locateCatelogList);
-            });
-        </script>
-    </div>
-    
-                
 
-                </div>
-            </div>
 
-            </div>
-            <script>
-                $('#sidebar').stickySidebar({
-                    topSpacing: 80,
-                    // bottomSpacing: 60
-                });
-            </script>
-            <!-- ?????? -->
-            <script>
-                hljs.initHighlightingOnLoad()
-              </script>
-            
-</body>
-
+  </body>
 </html>
