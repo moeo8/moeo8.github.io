@@ -280,11 +280,8 @@ p > code {
   background: #e1e9ed;
 }
 pre {
-  overflow-x: scroll;
-  padding: 10pt 15pt;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  background-color: #f5f5f5;
   color: #333;
   text-align: left;
   font-size: 13px;
@@ -819,7 +816,6 @@ body {
   margin-bottom: 24px;
 }
 .post-detail .post .post-content pre code {
-  padding: 1em;
   border-radius: 5px;
   font-size: 16px;
   font-family: 'Source Code Pro', Consolas, Menlo, Monaco, 'Courier New', monospace;
@@ -933,6 +929,30 @@ body {
 .id_card .id_card-sns .fa {
   margin: 20px 10px 0;
   font-size: 18px;
+}
+.friends_card {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(200, 200, 200, 0.25);
+  float: left;
+  width: calc(50% - 20px);
+  margin: 15px 10px;
+  padding: 30px;
+}
+.friends_card img.friends_card-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50% !important;
+  float: left;
+  margin: 0 15px 0 0 !important;
+}
+.friends_card a {
+  font-weight: bold;
+}
+.friends_card .friends_card-info {
+  height: 70px;
+  overflow: hidden;
+  line-height: 24px;
 }
 .toc-card .toc-content .markdownIt-TOC {
   margin-left: 0;

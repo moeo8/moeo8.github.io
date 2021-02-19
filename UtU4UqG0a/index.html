@@ -1,25 +1,33 @@
 <html>
 
 <head>
+    <!-- 防止浏览器缓存 -->
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+
+<!-- ?????? -->
+    
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
     静态博客系统比较 | 温故而知新
 </title>
-<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613753683888">
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613753834254">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
 <!-- js -->
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://moeo8.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-        
+
+    
 </head>
 
 <body>
@@ -28,7 +36,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://moeo8.github.io">
-                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613753683888" alt="">
+                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613753834254" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -94,32 +102,34 @@
     });
 </script>
 
-            <div id="main-content" class="post-detail main-container">
-                <!-- left -->
-                <div id="content" class="main-container-left">
-                    <article class="post i-card">
-                        <h2 class="post-title">
-                            静态博客系统比较
-                        </h2>
-                        <div class="post-info">
-                            <time class="post-time">2021-02-20</time>
-                            
-                                <a href="https://moeo8.github.io/tag/note/" class="post-tag i-tag
-                            i-tag-other_1">
+        <div id="main-content" class="post-detail main-container">
+            <!-- left -->
+            <div id="content" class="main-container-left">
+                <article class="post i-card">
+                    <h2 class="post-title">
+                        静态博客系统比较
+                    </h2>
+                    <div class="post-info">
+                        <time class="post-time">2021-02-20</time>
+                        
+                        <a href="https://moeo8.github.io/tag/note/"
+                            class="post-tag i-tag
+                            i-tag-">
                             #note
                         </a>
-                                
-                                <a href="https://moeo8.github.io/tag/rOWjDdgpM/" class="post-tag i-tag
-                            i-tag-success">
+                        
+                        <a href="https://moeo8.github.io/tag/rOWjDdgpM/"
+                            class="post-tag i-tag
+                            i-tag-banana">
                             #Gridea
                         </a>
-                                
-                        </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/QCenjoyLL/orange@latest/2020/12/05/6c332e2f718736496b49d1fa5b3ca406.png')"></div>
-                            
-                                <div class="post-content">
-                                    <h4 id="动态部署-wordpress-typecho-等">动态部署 WordPress、Typecho 等</h4>
+                    </div>
+                    
+                    <div class="post-feature-image" style="background-image: url('https://cdn.jsdelivr.net/gh/QCenjoyLL/orange@latest/2020/12/05/6c332e2f718736496b49d1fa5b3ca406.png')"></div>
+                    
+                    <div class="post-content">
+                        <h4 id="动态部署-wordpress-typecho-等">动态部署 WordPress、Typecho 等</h4>
 <p>资源占用大，大材小用，没有必要。</p>
 <h4 id="jekyll-hexo">Jekyll、Hexo</h4>
 <p>可用 Travis CI 自动部署，但要本地push比较麻烦，不考虑。</p>
@@ -131,29 +141,49 @@
 <h4 id="gridea"><a href="https://github.com/getgridea/gridea">Gridea</a></h4>
 <p>由于各种原因，最后用上了Gridea，国人开发，现在还不是很稳定（2021.02.20），主题较少，没有插件系统，cdn不完善，但是可用，而且架不过有客户端。部署最简单。不用只为一个博客，装一堆环境。</p>
 <img src="https://github.com/getgridea/gridea/raw/master/gridea-app-en.png" alt="img" style="zoom:45%;" />
-                                </div>
-                    </article>
-                    <!--  -->
-                    
-                        <div class="next-post">
-                            <div class="next">下一篇</div>
-                            <a href="https://moeo8.github.io/ZWzA4H_-t/">
-                                <h3 class="post-title">
-                                    BS CSの違い
-                                </h3>
-                            </a>
-                        </div>
-                        
-                            <div id="disqus_thread"></div>
-                            <div id="gitalk-container"></div>
+                    </div>
+                </article>
+                <!--  -->
+                
+                <div class="next-post">
+                    <div class="next">下一篇</div>
+                    <a href="https://moeo8.github.io/ZWzA4H_-t/">
+                        <h3 class="post-title">
+                            BS CSの違い
+                        </h3>
+                    </a>
                 </div>
-                <!-- middle -->
-                <div class="main-container-middle"></div>
-                <!-- right -->
-                <div id="sidebar" class="main-container-right">
-                    
-                        <!-- toc -->
-                        
+                
+                <div id="disqus_thread"></div>
+                <div id="gitalk-container"></div>
+                <div id="vcomments"></div>
+                <div class="site-footer">
+  ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> |
+  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+            </div>
+            <!-- middle -->
+            <div class="main-container-middle"></div>
+            <!-- right -->
+            <div id="sidebar" class="main-container-right">
+                
+                <!-- toc -->
+                
     <div class="toc-card i-card ">
         <div class="toc-title i-card-title">目录</div>
         <div class="toc-content">
@@ -202,34 +232,23 @@
         </script>
     </div>
     
-                            
+                
 
                 </div>
-
-
-
-
             </div>
 
-
-            <div class="site-footer">
-  ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
-
-    </div>
-    <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
-        });
-    </script>
-    
+            </div>
+            <script>
+                $('#sidebar').stickySidebar({
+                    topSpacing: 80,
+                    // bottomSpacing: 60
+                });
+            </script>
+            <!-- ?????? -->
+            <script>
+                hljs.initHighlightingOnLoad()
+              </script>
+            
 </body>
 
 </html>

@@ -1,25 +1,33 @@
 <html>
 
 <head>
+    <!-- 防止浏览器缓存 -->
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+
+<!-- ?????? -->
+    
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
     关于 | 温故而知新
 </title>
-<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613753683888">
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613753834254">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
 <!-- js -->
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://moeo8.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-        
+
+    
 </head>
 
 <body>
@@ -28,7 +36,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://moeo8.github.io">
-                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613753683888" alt="">
+                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613753834254" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -94,20 +102,20 @@
     });
 </script>
 
-            <div id="main-content" class="post-detail main-container">
-                <!-- left -->
-                <div id="content" class="main-container-left">
-                    <article class="post i-card">
-                        <h2 class="post-title">
-                            关于
-                        </h2>
-                        <div class="post-info">
-                            <time class="post-time">2019-01-26</time>
-                            
-                        </div>
+        <div id="main-content" class="post-detail main-container">
+            <!-- left -->
+            <div id="content" class="main-container-left">
+                <article class="post i-card">
+                    <h2 class="post-title">
+                        关于
+                    </h2>
+                    <div class="post-info">
+                        <time class="post-time">2019-01-26</time>
                         
-                                <div class="post-content">
-                                    <blockquote>
+                    </div>
+                    
+                    <div class="post-content">
+                        <blockquote>
 <p>欢迎来到我的小站呀，很高兴遇见你！</p>
 </blockquote>
 <img src="https://raw.githubusercontent.com/moeo8/PicGo/master/img/20210220003934.png" style="zoom:20%;" />
@@ -120,20 +128,40 @@
 <h2 id="联系我呀"><strong>📬 联系我呀</strong></h2>
 <p><a href="https://t.me/moeo8"><img src="https://cdn.jsdelivr.net/gh/QCenjoyLL/orange@latest/2021/02/20/42d98e3da2cdecd33cd50017fc034bfc.png" align="left" style="zoom:10%;" /></a></p>
 
-                                </div>
-                    </article>
-                    <!--  -->
-                    
-                            <div id="disqus_thread"></div>
-                            <div id="gitalk-container"></div>
-                </div>
-                <!-- middle -->
-                <div class="main-container-middle"></div>
-                <!-- right -->
-                <div id="sidebar" class="main-container-right">
-                    
-                        <!-- toc -->
-                        
+                    </div>
+                </article>
+                <!--  -->
+                
+                <div id="disqus_thread"></div>
+                <div id="gitalk-container"></div>
+                <div id="vcomments"></div>
+                <div class="site-footer">
+  ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> |
+  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+            </div>
+            <!-- middle -->
+            <div class="main-container-middle"></div>
+            <!-- right -->
+            <div id="sidebar" class="main-container-right">
+                
+                <!-- toc -->
+                
     <div class="toc-card i-card ">
         <div class="toc-title i-card-title">目录</div>
         <div class="toc-content">
@@ -174,34 +202,23 @@
         </script>
     </div>
     
-                            
+                
 
                 </div>
-
-
-
-
             </div>
 
-
-            <div class="site-footer">
-  ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
-
-    </div>
-    <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
-        });
-    </script>
-    
+            </div>
+            <script>
+                $('#sidebar').stickySidebar({
+                    topSpacing: 80,
+                    // bottomSpacing: 60
+                });
+            </script>
+            <!-- ?????? -->
+            <script>
+                hljs.initHighlightingOnLoad()
+              </script>
+            
 </body>
 
 </html>
