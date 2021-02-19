@@ -1,200 +1,281 @@
 <html>
-
 <head>
-    <meta charset="utf-8" />
+  <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>
-    BS CSの違い | 温故而知新
-</title>
-<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613752338743">
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
-<!-- js -->
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://moeo8.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<meta name="robots" content="all,follow">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<title>BS CSの違い | 温故而知新</title>
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613753406190">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://moeo8.github.io/styles/main.css" type='text/css' media='all'>
+
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 
-        
+
+
 </head>
-
-<body>
-    <div class="main">
-        <div class="header">
-    <div class="nav">
-        <div class="logo">
-            <a href="https://moeo8.github.io">
-                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613752338743" alt="">
-            </a>
-            <div class="site-title">
-                <h1>
-                    温故而知新
-                </h1>
+<body class="home blog ct-body standard">
+<div id="overflow-container" class="overflow-container">
+  <a class="skip-content" href="#main">Skip to content</a>
+  <header id="site-header" class="site-header" role="banner">
+    <div class='top-navigation top-navigation-important'>
+        <div class='container'>
+            <div id="menu-secondary" class="menu-container menu-secondary" role="navigation">
+                <button id="toggle-secondary-navigation" class="toggle-secondary-navigation"><i class="fa fa-plus"></i></button>
+                <div class="menu">
+                    <ul id="menu-secondary-items" class="menu-secondary-items">
+                        
+                        
+                            
+                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+                            <a href="https://moeo8.github.io/tag/note/">note</a>
+                        </li>
+                            
+                        
+                            
+                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+                            <a href="https://moeo8.github.io/tag/rOWjDdgpM/">Gridea</a>
+                        </li>
+                            
+                        
+                            
+                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+                            <a href="https://moeo8.github.io/tag/tv/">tv</a>
+                        </li>
+                            
+                        
+                            
+                        <li id="menu-item" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item">
+                            <a href="https://moeo8.github.io/tag/typora/">typora</a>
+                        </li>
+                            
+                        
+                    </ul>
+                </div>
             </div>
-        </div>
-        <span class="menu-btn fa fa-align-justify"></span>
-        <div class="menu-container">
-            <ul>
+            <ul class="social-media-icons">
                 
                     
-                            <li>
-                                <a href="/" class="menu">
-                                    首页
-                                </a>
-                            </li>
-                            
-                                
+                
                     
-                            <li>
-                                <a href="/archives" class="menu">
-                                    归档
-                                </a>
-                            </li>
-                            
-                                
+                
                     
-                            <li>
-                                <a href="/tags" class="menu">
-                                    标签
-                                </a>
-                            </li>
-                            
-                                
+                
                     
-                            <li>
-                                <a href="https://moeo8.github.io/about" class="menu">
-                                    关于
-                                </a>
-                            </li>
-                            
-                                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
             </ul>
         </div>
     </div>
-</div>
 
-<script>
-    $(document).ready(function() {
-        $(".menu-btn").click(function() {
-            $(".menu-container").slideToggle();
-        });
-        $(window).resize(function() {
-
-            if (window.matchMedia('(min-width: 960px)').matches) {
-                $(".menu-container").css('display', 'block')
-            } else {
-                $(".menu-container").css('display', 'none')
-            }
-
-        });
-    });
-</script>
-
-            <div id="main-content" class="post-detail main-container">
-                <!-- left -->
-                <div id="content" class="main-container-left">
-                    <article class="post i-card">
-                        <h2 class="post-title">
-                            BS CSの違い
-                        </h2>
-                        <div class="post-info">
-                            <time class="post-time">2021-02-20</time>
-                            
-                                <a href="https://moeo8.github.io/tag/tv/" class="post-tag i-tag
-                            i-tag-other_4">
-                            #tv
-                        </a>
-                                
-                        </div>
+    <div class="container">
+        <div id="title-info" class="title-info">
+            <div id='site-title' class='site-title'>
+                <a href="https://moeo8.github.io">  温故而知新 </a>
+            </div>
+        </div>
+        <button id="toggle-navigation" class="toggle-navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div id="menu-primary-tracks" class="menu-primary-tracks"></div>
+        <div id="menu-primary" class="menu-container menu-primary" role="navigation">
+            <p class="site-description">The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
+<br>
+宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。</p>
+            <div class="menu">
+                <ul id="menu-primary-items" class="menu-primary-items">
+                     
                         
-                            <div class="post-feature-image" style="background-image: url('https://i.loli.net/2020/10/18/YmxpAUaMR5BfQOn.png')"></div>
-                            
-                                <div class="post-content">
-                                    <p>チャンネルリスト</p>
+                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
+                                <a href="/">首页</a>
+                            </li>
+                        
+                    
+                        
+                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
+                                <a href="/archives">归档</a>
+                            </li>
+                        
+                    
+                        
+                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
+                                <a href="/tags">标签</a>
+                            </li>
+                        
+                    
+                        
+                            <li id="menu-item" class='menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item'>
+                                <a href="https://moeo8.github.io/about">关于</a>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+
+  <div id="main" class="main" role="main">
+    <div id="loop-container" class="loop-container">
+      <div class="post type-post status-publish format-standard has-post-thumbnail hentry category-design tag-design tag-standard-2 tag-tagalicious tag-travel entry full-without-featured odd excerpt-1">
+        
+          <div class='featured-image lazy lazy-bg-image' data-background="https://i.loli.net/2020/10/18/YmxpAUaMR5BfQOn.png">
+          </div>
+        
+
+        <div class="entry-meta">
+          <span class="date">· 2021-02-20 ·</span> <span> / </span>
+          <span class="author">
+            <a href="https://moeo8.github.io" title="" rel="author"> ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></a>
+          </span>
+          
+            <span class="category">
+                    <span> / </span>
+                    <a href="https://moeo8.github.io/tag/tv/">tv</a>
+                </span>
+          
+        </div>
+        <div class='entry-header'>
+          <h1 class='entry-title'>BS CSの違い</h1>
+        </div>
+        <div class="entry-container">
+          <div class="entry-content">
+            <article>
+              <p>チャンネルリスト</p>
 <figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/10/18/YmxpAUaMR5BfQOn.png" alt="image.png" loading="lazy"></figure>
 <p>、BS（右旋・左旋）やCS（110度・124度・128度）では</p>
 <p>https://www.soumu.go.jp/menu_seisaku/ictseisaku/housou_suishin/4k8k_suishin/policy.html</p>
 
-                                </div>
-                    </article>
-                    <!--  -->
+            </article>
+          </div>
+          <div class='entry-meta-bottom'>
+            <div class="entry-categories">
+              <p>
+                <span>Categories</span>
+                
+                  
                     
-                        <div class="next-post">
-                            <div class="next">下一篇</div>
-                            <a href="https://moeo8.github.io/GDmWbOVGT/">
-                                <h3 class="post-title">
-                                    Note: TyporaでMarkdownを始めよう！
-                                </h3>
-                            </a>
-                        </div>
-                        
-                            <div id="disqus_thread"></div>
-                            <div id="gitalk-container"></div>
-                </div>
-                <!-- middle -->
-                <div class="main-container-middle"></div>
-                <!-- right -->
-                <div id="sidebar" class="main-container-right">
+                  <a href="https://moeo8.github.io/tag/note/" title="View all posts in note">note</a>
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://moeo8.github.io/images/avatar.png?v=1613752338743)">
-        </div>
-        <h1 class="id_card-title">
-            温故而知新
-        </h1>
-        <h2 class="id_card-description">
-            The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
-&lt;br&gt;
-宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
                     
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
-
-        </div>
-    </div>
-    
-                                    
-
-                </div>
-
-
-
-
+                    
+                  <a href="https://moeo8.github.io/tag/rOWjDdgpM/" title="View all posts in Gridea">Gridea</a>
+                    
+                    
+                    
+                  <a href="https://moeo8.github.io/tag/tv/" title="View all posts in tv">tv</a>
+                    
+                    
+                    
+                  <a href="https://moeo8.github.io/tag/typora/" title="View all posts in typora">typora</a>
+                    
+                    
+              </p>
             </div>
-
-
-            <div class="site-footer">
-  ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
-
+            <div class="entry-tags">
+              <p><span>Tags</span>
+              </p>
+            </div>
+          </div>
+          <div class="author-meta">
+            <div class="author">
+              <img alt='' src="https://moeo8.github.io/images/avatar.png?v=1613753406190" class='avatar avatar-72 photo' height='72' width='72'>
+              <span>WRITTEN BY: &nbsp;&nbsp;&nbsp;<a href='https://moeo8.github.io'></a> </span>
+            </div>
+            <div class="bio">
+              <p></p>
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+                
+              
+            </div>
+          </div>
+        </div>
+          
+            <nav class="navigation pagination" role="navigation">
+              <h2 class="screen-reader-text">Posts navigation</h2>
+              <div class="nav-links">
+                <a class="next page-numbers" href="https://moeo8.github.io/GDmWbOVGT/">下一篇->Note: TyporaでMarkdownを始めよう！</a>
+              </div>
+            </nav>
+          
+      </div>
+      <section id="comments" class="comments">
+        
+      </section>
     </div>
-    <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
-        });
-    </script>
-    
-</body>
+  </div>
+  <footer id="site-footer" class="site-footer" role="contentinfo">
+    <h1>
+        <a href="https://moeo8.github.io"> 温故而知新 </a>
+    </h1>
+    <p class="site-description">The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
+<br>
+宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。</p>
+    <div id="menu-footer" class="menu-container menu-footer" role="navigation">
+        <div class="menu">
+            <ul id="menu-footer-items" class="menu-footer-items">
+            </ul>
+        </div>
+    </div>
+    <ul class="social-media-icons">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </ul>
+    <div class="design-credit">
+        <p>©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
+    </div>
+</footer>
+<script>
+    hljs.initHighlightingOnLoad()
+</script>
+<script src="https://moeo8.github.io/media/scripts/lib/jquery.min.js"></script>
+<script src="https://moeo8.github.io/media/scripts/lib/jquerymigrate.js"></script>
+<script src="https://moeo8.github.io/media/scripts/lib/production.min.js"></script>
 
+</div>
+</body>
 </html>
+
