@@ -1,114 +1,108 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>Note: TyporaでMarkdownを始めよう！ | 温故而知新</title>
-<meta name="description" content="The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
-&lt;br&gt;
-宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613753987639">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613754269392">
 <link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
 
 
 
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
+    <meta name="description" content="
+段落と改行
+ネット上で共有されている文章は、読み手の環境に依存するために改行はあまり使われていません。受けとったメールが変なところで改行されていて読みづらいと思ったことは、誰しもが経験したことがあるのではないでしょうか。
+文章を読みやすく..." />
+    <meta name="keywords" content="note,typora" />
   </head>
   <body>
     <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://moeo8.github.io">
-        <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613753987639" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://moeo8.github.io">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://moeo8.github.io">
+        <img src="https://moeo8.github.io/images/avatar.png?v=1613754269392" class="site-logo">
         <h1 class="site-title">温故而知新</h1>
       </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
-  </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
+    <div>
       
         
-          <a href="/" class="menu purple-link">
+          <a href="/" class="site-nav">
             首页
           </a>
         
       
         
-          <a href="/archives" class="menu purple-link">
+          <a href="/archives" class="site-nav">
             归档
           </a>
         
       
         
-          <a href="/tags" class="menu purple-link">
+          <a href="/tags" class="site-nav">
             标签
           </a>
         
       
         
-          <a href="https://moeo8.github.io/about" class="menu purple-link">
+          <a href="https://moeo8.github.io/about" class="site-nav">
             关于
           </a>
         
       
     </div>
   </div>
-</transition>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
+<br>
+宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。
+    </div>
+    <div class="site-footer">
+      ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
 
 
-      <div class="content-container">
-        <div class="post-detail">
-          
-            <div class="feature-container" style="background-image: url('https://drive.google.com/uc?id=16Gy6s7rc019NvEsBnVZS6w148lfTCn74')">
-            </div>
-          
-          <h2 class="post-title">Note: TyporaでMarkdownを始めよう！</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2021-02-20</span>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Note: TyporaでMarkdownを始めよう！</h2>
+            <div class="post-date">2021-02-20</div>
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://moeo8.github.io/tag/note/">
-                    note
-                    
-                      ，
-                    
-                  </a>
-                
-                  <a href="https://moeo8.github.io/tag/typora/">
-                    typora
-                    
-                  </a>
-                
-              </span>
+              <div class="feature-container" style="background-image: url('https://drive.google.com/uc?id=16Gy6s7rc019NvEsBnVZS6w148lfTCn74')">
+              </div>
             
-          </div>
-          <div class="post-content">
-            <figure data-type="image" tabindex="1"><img src="https://drive.google.com/uc?id=16Gy6s7rc019NvEsBnVZS6w148lfTCn74" alt="最高のMarkdownエディタtypora" loading="lazy"></figure>
+            <div class="post-content" v-pre>
+              <figure data-type="image" tabindex="1"><img src="https://drive.google.com/uc?id=16Gy6s7rc019NvEsBnVZS6w148lfTCn74" alt="最高のMarkdownエディタtypora" loading="lazy"></figure>
 <h4 id="段落と改行">段落と改行</h4>
 <p>ネット上で共有されている文章は、読み手の環境に依存するために改行はあまり使われていません。受けとったメールが変なところで改行されていて読みづらいと思ったことは、誰しもが経験したことがあるのではないでしょうか。</p>
 <p>文章を読みやすくするためには段落を使います。HTMLでは<p></p>で文章を囲みますが、MarkdownではEnterを押して改行すると次の段落になります。Markdownでも改行はあり、<code>半角スペース2つ</code>で改行なのですが、Typoraでは<code>SHIFT+ENTER</code>で改行となります。</p>
@@ -383,47 +377,43 @@ $ \textcolor{gray}{文字色を灰色にする方法} $
 参考にしてください。</p>
 <p>https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html</p>
 
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://moeo8.github.io/tag/note/" class="tag">
+                    note
+                  </a>
+                
+                  <a href="https://moeo8.github.io/tag/typora/" class="tag">
+                    typora
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://moeo8.github.io/TiKPMk8ps/">
+                  <h3 class="post-title">
+                    分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
           </div>
+
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://moeo8.github.io/TiKPMk8ps/">
-              <h3 class="post-title">
-                下一篇：分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质
-              </h3>
-            </a>
-          </div>
-          
       </div>
-
-      
-
-      <div class="site-footer">
-  <div class="slogan">The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
-<br>
-宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。</div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </div>
-  ©20210219 By Alex<br>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-
     </div>
-    <script type="application/javascript">
 
-hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
 
 var app = new Vue({
   el: '#app',
@@ -433,6 +423,8 @@ var app = new Vue({
 })
 
 </script>
+
+
 
 
 
