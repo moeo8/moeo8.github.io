@@ -1,159 +1,515 @@
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-<meta name="description" content=""/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-<title>typora | 温故而知新</title>
-
-<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613742173737">
-
-<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    typora | 温故而知新
+</title>
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613742541656">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
-
-<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
-<!-- DEMO JS -->
-<!--<script src="media/scripts/index.js"></script>-->
-
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://moeo8.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
 </head>
+
 <body>
-<div class="main gt-bg-theme-color-first">
-    <div class="main-content">
-        <nav class="navbar navbar-expand-lg">
-    <div class="navbar-brand">
-        <img class="user-avatar" src="/images/avatar.png" alt="头像">
-        <div class="site-name gt-c-content-color-first">
-            温故而知新
-        </div>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto" style="text-align: center">
-            
-                <div class="nav-item">
-                    
-                        <a href="/" class="menu gt-a-link">
-                            首页
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/archives" class="menu gt-a-link">
-                            归档
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/tags" class="menu gt-a-link">
-                            标签
-                        </a>
-                    
-                </div>
-            
-                <div class="nav-item">
-                    
-                        <a href="/post/about" class="menu gt-a-link">
-                            关于
-                        </a>
-                    
-                </div>
-            
-        </div>
-        <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1613742173737" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
-                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
-            </form>
-        </div>
-    </div>
-</nav>
-
-        <div class="current-tag-container">
-            <h2 class="title gt-c-content-color-first">
-                #typora
-            </h2>
-        </div>
-        <div class="post-list-container">
-    <div class="post-inner">
-        
-            <div class="post gt-bg-theme-color-second">
-                <div class="post-left">
-                    <div>
-                        
-                        <a href="https://moeo8.github.io/GDmWbOVGT/">
-                            <span class="post-title gt-c-content-color-first">Note: TyporaでMarkdownを始めよう！</span>
-                        </a>
-                    </div>
-                    <div class="gt-post-content post-abstract gt-c-content-color-second">
-                        
-                    </div>
-                    <div class="post-info">
-                        <time class="post-time gt-c-content-color-first">
-                            发布于 · 2021-02-19 ·
-                        </time>
-                        
-                            <a href="https://moeo8.github.io/tag/note/" class="post-tag">
-                                # note
-                            </a>
-                        
-                            <a href="https://moeo8.github.io/tag/typora/" class="post-tag">
-                                # typora
-                            </a>
-                        
-                    </div>
-                </div>
-                
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://moeo8.github.io">
+                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613742541656" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    温故而知新
+                </h1>
             </div>
-        
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/" class="menu">
+                                    首页
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
     </div>
-</div>
-        <div class="pagination-container">
-    
-    
 </div>
 
-        <div class="site-footer gt-c-content-color-first">
-    <div class="slogan gt-c-content-color-first">The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
-宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。</div>
-    <div class="social-container">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-container main-container">
+                <div id="content" class="main-container-left">
+                    
+    <div class="i-card">
+        <b>标签：#
+        typora</b>
     </div>
-    <div class="footer-info">
-        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://moeo8.github.io/GDmWbOVGT/">
+                        Note: TyporaでMarkdownを始めよう！
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2021-02-19</time>
+                    
+                        <a href="https://moeo8.github.io/tag/note/" class="post-tag i-tag
+                            i-tag-other_1">
+            #note
+        </a>
+                        
+                        <a href="https://moeo8.github.io/tag/typora/" class="post-tag i-tag
+                            i-tag-other_4">
+            #typora
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            
+Markdownは、文章を記述するための軽量マークアップ言語でネット上で文章を共有するのに便利に使えます。拡張子は.mdですが、中身はテキスト文章なので軽量ですし、特殊なエディタやビューアーがなくても中身を確認できます。
+IT技術者でなくてもブログの下書き、メモやレポートなどにも活用できます。
+Markdown形式の特徴
+
+
+シンプル
+簡単な記号で書式を指定できるので、HTMLタグよりも100倍簡単です
+
+
+書式が使える
+Markdownは、表（テーブル）もあり、使える書式も文章を書く上で十分です。また、LaTeX, flow, sequence, mermaid をサポートしているので、数式、フローチャート、シーケンス図、ガントチャートなどもテキスト表記で描けます
+
+
+互換性がある
+MarkdownからHTML、Word形式、PDFなど他のフォーマットに変換できます
+
+
+Markdownは、シンプルで書式が使えて、互換性があるだけではありません。何よりも キーボードから手を放さぜずに書けるというのは、文章を書く上でとても大切なことです。
+Typoraは最強のMarkdownエディタ
+多くのMarkdownエディタが、編集画面と表示画面の二画面で構成されていますが、Typoraは、WYSIWYG（What You See Is What You Get）なインターフェイスで、入力したものがそのまま描写されます。またフローチャート、シーケンス図、ガントチャートなどもコマンドベースで作成することができます。
+更には、後述するGUIでの表（テーブル）機能のサポート、Excelなどからの表のコピペ、画像コピペなど、コマンドで面倒な部分はGUIでサポートしてくれます。Typoraは、Linux/Mac/Windowsで動作し、現在は、β版ということで無料で利用できます。
+Typoraの特徴
+
+軽量でシンプルなエディタ
+WYSIWYGなインターフェイス
+フローチャート、シーケンス図など図が描写できる
+面倒なコマンドはGUIでサポート
+
+と、とっても便利なTyporaです。いま時点で最高のMarkdownエディタだと思います。
+TyporaでのMarkdown文法
+Typoraは、下記の段落と改行以外については、標準のMarkdownに準拠しています。
+
+【目次】Markdownの文法
+
+段落と改行
+ネット上で共有されている文章は、読み手の環境に依存するために改行はあまり使われていません。受けとったメールが変なところで改行されていて読みづらいと思ったことは、誰しもが経験したことがあるのではないでしょうか。
+文章を読みやすくするためには段落を使います。HTMLではで文章を囲みますが、MarkdownではEnterを押して改行すると次の段落になります。Markdownでも改行はあり、半角スペース2つで改行なのですが、TyporaではSHIFT+ENTERで改行となります。
+改行された
+文章
+Markdownの文法（目次）へ戻る
+見出し
+見出しは6段階です。＃の数が少ない方が大きな見出しとなり、htmlのh1からh6タグまでに相当しています。
+# 見出し（h1）
+## 見出し（h2）
+### 見出し（h3）
+#### 見出し（h4）
+##### 見出し（h5）
+###### 見出し（h6）
+
+Sample
+
+Markdownの文法（目次）へ戻る
+リスト
+リストは - か * です。Tabキーでインデントを付けることもできます。
+- 順序なし１
+ - インデント１
+  - インデント２
+- 順序なし２
+
+Sample
+
+順序なし１
+
+インデント１
+
+インデント２
+
+
+
+
+順序なし２
+
+番号を付けたリストも作成できます。番号は、1.からでなくても始められます。Enterで次のリストとなり、文字を入力せずに続けてEnterするとリストは終了します。
+1. 順序付き１
+ 1. インデント1
+ 2. インデント2
+2．順序付き２
+
+Sample
+
+順序付き１
+
+インデント1
+インデント2
+
+
+順序付き２
+
+チェックボックスも作ることができます。
+- [x] チェック済み
+- [ ] 未チェック
+
+Sample
+チェック済み
+未チェック
+Markdownの文法（目次）へ戻る
+文字を強調する
+文字を *（アスタリスク）で囲むと斜体になります、アスタリスクふたつで囲むと太字で、三つで囲むとと斜体と太字の組み合わせとなります。
+*斜体（イタリック）*
+**太字**
+***Bold &amp;amp; Italic***
+
+Sample
+Shatai(Italic)
+太字
+*Bold &amp;amp; Italic*
+Markdownの文法（目次）へ戻る
+打消し線
+~（チルダ）2つで囲むと打消し線付きの文字となります。
+~~打消し線~~
+
+Sample
+打消し線
+Markdownの文法（目次）へ戻る
+リンク
+参照リンクは、タイトルで記述します。
+[象と散歩](https://walking-elephant.blogspot.com)
+
+Sample
+象と散歩
+Markdownの文法（目次）へ戻る
+画像
+画像の差し込みは、参照リンクの記述と似ていますが、先頭に!（エクスクラメーション）を付けます。
+![画像タイトル](画像URL)
+
+で指定します。Typoraでは、![画像タイトル](まで入力するとURL指定とフォルダからの画像選択の両方を促す表示となります。WEB上の画像を利用するのであれば ”画像のURLを入力” にURLを指定し、ローカルに保存されている画像を使う場合は、フォルダアイコンをクリックして画像を選択します。
+
+もっと簡単に画像をコピー&amp;amp;ペーストすることもできます。画像をコピペするとWindowsであれば、C:\Users\ユーザ名\AppData\Roaming\Typora\typora-user-images\に画像が保存されます。
+Markdownの文法（目次）へ戻る
+引用
+引用は &amp;gt; を使います。二重引用の場合は &amp;gt;&amp;gt; です。メールなどの引用符でも使いますから馴染みがあるかと思います。
+&amp;gt; 象と散歩をするようにゆっくりとデータ解析やマーケティングについて考えて
+&amp;gt; みようと思っていますが、物欲という雑念が払拭できません。
+&amp;gt; 趣味のエギング、アクアリム、三線は永遠の初心者です。
+&amp;gt;
+&amp;gt; 【引用】[象と散歩](https://walking-elephant.blogspot.com)
+
+Sample
+
+象と散歩をするようにゆっくりとデータ解析やマーケティングについて考えてみようと思っていますが、物欲という雑念が払拭できません。趣味のエギング、アクアリム、三線は永遠の初心者です。
+【引用】象と散歩
+
+Markdownの文法（目次）へ戻る
+コード
+1行でコード（等幅フォントで整形）を記載する場合は、`（バッククォート）で囲みます。
+`1+1=2`
+
+複数行の場合は （バッククォート）３つで括りますが、Typoraの場合、`````で改行、若しくは、```` 言語名でコード入力用のボックスが生成されます。
+​``` gas
+function myFunction() {
+Browser.msgBox(&#39;hello, world!&#39;);
+}
+
+Markdownの文法（目次）へ戻る
+注釈
+文献を引用した場合や、補足説明をする場合に使う注釈は、[^注記号] と [^注記号]: 補足文 を使います。本文中の注記号にマウスオーバーすると補足文の内容が表示されます。
+Sample
+注釈のつけ方1
+1 注釈1の補足↩
+Markdownの文法（目次）へ戻る
+表（Table）
+表（Table）は、各セルの内容を |（パイプ） で括ります。列は2列以上が必要で、最初の行はTable Header（TH）となり、2行目が表レイアウト、3行目からが、Table Data（TD）となります。2行目の表レイアウトは省略できます。
+|TH1|TH2|TH3|
+|----|----|----|
+|TD1|TD2|TD3|
+
+Sample
+
+
+
+TH1
+TH2
+TH3
+
+
+
+
+TD1
+TD2
+TD3
+
+
+
+表の幅は100％（表示画面の最大）ですが、各セルの比率は、-（ハイフン）で変更することができます。またセル内の左揃え、中央揃え、右揃えは、:(コロン)で表します。
+|左揃え|中央揃え|右揃え|
+|:--|:----:|--:|
+|TD1 |TD2 |TD3 |
+
+Sample
+
+
+
+左揃え
+中央揃え
+右揃え
+
+
+
+
+TD1
+TD2
+TD3
+
+
+
+Typoraの場合は、最初のヘッダー行のみ入力をしてエンターを押すと、表ツールが立ち上がるので、行、列の追加削除、文字位置などが簡単に行えます。
+
+Markdownの文法（目次）へ戻る
+水平線
+水平線は、***, 若しくは、---で書きます。
+Sample
+Markdownの文法（目次）へ戻る
+エスケープ
+Markdown として意味がある記号の前に、\ を書くと文字をそのまま記述できます。
+\*\*太字になりません\*\*
+
+Sample
+太字になりません
+Markdownの文法（目次）へ戻る
+目次
+Tyoraで目次を作成するときは、[TOC]と記載するだけです。見出しの1~6が目次となります。
+Typora の文法サポート
+Typoraでは、メニューバーの &amp;quot;ファイル(F) → 設定&amp;quot; で文法サポートの各項目をチェックすると、下付き、上付き文字、ハイライトがサポートされます（ダイアグラムについては別途説明）。
+
+下付き文字
+下付き文字は、~（チルダ）で囲みます。
+H~2~O
+
+Sample
+H2O
+Markdownの文法（目次）へ戻る
+上付き文字
+上付き文字は、^（ハット）で囲みます。
+X^2^
+
+Sample
+X2
+Markdownの文法（目次）へ戻る
+ハイライト
+文字をハイライトするときは、=（イコール）ふたつで囲みます。
+==ハイライト==
+
+Sample
+ハイライト
+絵文字
+Markdownでは、絵文字コードを :（コロン）で囲って、絵文字を埋め込めむことができます。しかし、絵文字コードを覚えるのは大変です。絵文字を使うのであれば、EMOJI CHEAT SHEET に絵文字の一覧があります。絵文字をクリックするとコードがコピーされるので便利です。但し、:simple_smile:などのいくつかの絵文字は使えませんでした。
+:smile:
+:sweat:
+:cry:
+:thumbsup:
+:elephant:
+
+Sample
+😄😓😢👍🐘
+Markdownの文法（目次）へ戻る
+HTMLタグで文字装飾をする
+TyporaではHTMLタグもそのまま記載できます。文字色ぐらいはMarkdownでも対応してもらいたいところですが、下線、文字色、文字寄せ、ルビ文字などは、HTMLタグで記述します。
+HTMLで下線
+下線はhtmlタグ&amp;lt;u&amp;gt;を使います。
+&amp;lt;u&amp;gt;下線&amp;lt;/u&amp;gt;
+
+Sample
+下線
+Markdownの文法（目次）へ戻る
+HTMLで文字色
+文字色はhtmlタグ&amp;lt;font&amp;gt;を使います。
+&amp;lt;font color=&amp;quot;red&amp;quot;&amp;gt;文字を赤色にする方法&amp;lt;/font&amp;gt;
+&amp;lt;font color=&amp;quot;blue&amp;quot;&amp;gt;文字を青色にする方法&amp;lt;/font&amp;gt;
+&amp;lt;font color=&amp;quot;gray&amp;quot;&amp;gt;文字を灰色にする方法&amp;lt;/font&amp;gt;
+
+Sample
+文字を赤色にする方法
+文字を青色にする方法
+文字を灰色にする方法
+Markdownの文法（目次）へ戻る
+HTMLで文字寄せ
+文字寄せは divタグ の style属性 を使います。
+&amp;lt;div style=&amp;quot;text-align: right;&amp;quot;&amp;gt;
+右寄せ
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=”text-aligh: center;”&amp;gt;
+中央寄せ
+&amp;lt;/div&amp;gt;
+&amp;lt;div style=”text-align: left;”&amp;gt;
+左寄せ
+&amp;lt;/div&amp;gt;
+
+Sample
+右寄せ
+中央寄せ
+左寄せ
+追記：2019.08 文字寄せについて追記しました。
+Markdownの文法（目次）へ戻る
+HTMLでルビ文字
+ルビ文字はhtmlタグ&amp;lt;ruby&amp;gt;を使います。
+&amp;lt;ruby&amp;gt;霰&amp;lt;rt&amp;gt;あられ&amp;lt;/rt&amp;gt;&amp;lt;/ruby&amp;gt;
+
+Sample
+霰あられ
+Markdownの文法（目次）へ戻る
+LaTeXで文字装飾をする
+Typoraの文法サポートでインライン数式をチェックするとLaTeXが使えます。LaTeXは、数式の記述や論文の体裁を整えるためのものですが、ちょっと構文が面倒です。[改訂第7版]LaTeX2ε美文書作成入門 など書籍で勉強するか、LaTeXコマンド集 を参照してください。
+TyporaでLaTexを使うには、（ダラー）で囲みます。複数行にまたがる場合は、（ダラー）で囲みます。複数行にまたがる場合は、（ダラー）で囲みます。複数行にまたがる場合は、$で囲みます。
+LaTexで数式
+数式はこんな風に書きます。
+$ \ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$} $
+
+Sample
+
+Markdownの文法（目次）へ戻る
+LaTexで文字色
+LaTeXを使って文字色を付けることもできます。
+$ \textcolor{red}{文字色を赤色にする方法} $
+$ \textcolor{blue}{文字色を青色にする方法} $
+$ \textcolor{gray}{文字色を灰色にする方法} $
+
+Sample
+文字色を赤色にする方法
+文字色を青色にする方法
+文字色を灰色にする方法
+Markdownの文法（目次）へ戻る
+Markdownで図形も描ける
+Typoraでは、文法サポートのダイアグラムをチェックしていると、フローチャート、シーケンス図、ガントチャートいった図形もプレーンテキストで表記することができます。こちらの記述方法については、別途、書きたいと思います。
+簡単シンプルで色々できるMarkdownをTyporaで始めましょう。
+Typora で Markdown シリーズ
+Typora での Markdown の記述方法については、下記のシリーズで紹介しています。
+参考にしてください。
+https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://moeo8.github.io/GDmWbOVGT/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://moeo8.github.io/images/avatar.png?v=1613742541656)">
+        </div>
+        <h1 class="id_card-title">
+            温故而知新
+        </h1>
+        <h2 class="id_card-description">
+            The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
+宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
     </div>
-    <div>
-        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
-                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a></a>
-    </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+
+                </div>
+            </div>
+
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
 </div>
 
 <script>
@@ -161,6 +517,12 @@
 </script>
 
     </div>
-</div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
 </body>
+
 </html>
