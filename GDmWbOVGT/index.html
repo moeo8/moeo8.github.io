@@ -1,25 +1,33 @@
 <html>
 
 <head>
+    <!-- 防止浏览器缓存 -->
+<meta http-equiv="pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate"> 
+<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
+
+<!-- ?????? -->
+    
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
     Note: TyporaでMarkdownを始めよう！ | 温故而知新
 </title>
-<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613742541656">
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613744126108">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
 <!-- js -->
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://moeo8.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-        
+
+    
 </head>
 
 <body>
@@ -28,7 +36,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://moeo8.github.io">
-                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613742541656" alt="">
+                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613744126108" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -94,70 +102,37 @@
     });
 </script>
 
-            <div id="main-content" class="post-detail main-container">
-                <!-- left -->
-                <div id="content" class="main-container-left">
-                    <article class="post i-card">
-                        <h2 class="post-title">
-                            Note: TyporaでMarkdownを始めよう！
-                        </h2>
-                        <div class="post-info">
-                            <time class="post-time">2021-02-19</time>
-                            
-                                <a href="https://moeo8.github.io/tag/note/" class="post-tag i-tag
+        <div id="main-content" class="post-detail main-container">
+            <!-- left -->
+            <div id="content" class="main-container-left">
+                <article class="post i-card">
+                    <h2 class="post-title">
+                        Note: TyporaでMarkdownを始めよう！
+                    </h2>
+                    <div class="post-info">
+                        <time class="post-time">2021-02-19</time>
+                        
+                        <a href="https://moeo8.github.io/tag/note/"
+                            class="post-tag i-tag
                             i-tag-error">
                             #note
                         </a>
-                                
-                                <a href="https://moeo8.github.io/tag/typora/" class="post-tag i-tag
-                            i-tag-other_3">
+                        
+                        <a href="https://moeo8.github.io/tag/typora/"
+                            class="post-tag i-tag
+                            i-tag-warning">
                             #typora
                         </a>
-                                
-                        </div>
                         
-                                <div class="post-content">
-                                    <figure data-type="image" tabindex="1"><img src="https://drive.google.com/uc?id=16Gy6s7rc019NvEsBnVZS6w148lfTCn74" alt="最高のMarkdownエディタtypora" loading="lazy"></figure>
-<p>Markdownは、<strong>文章を記述するための軽量マークアップ言語</strong>でネット上で文章を共有するのに便利に使えます。拡張子は.mdですが、中身はテキスト文章なので軽量ですし、特殊なエディタやビューアーがなくても中身を確認できます。</p>
-<p>IT技術者でなくてもブログの下書き、メモやレポートなどにも活用できます。</p>
-<h3 id="markdown形式の特徴">Markdown形式の特徴</h3>
-<ul>
-<li>
-<p>シンプル</p>
-<p>簡単な記号で書式を指定できるので、HTMLタグよりも100倍簡単です</p>
-</li>
-<li>
-<p><strong>書式が使える</strong><br>
-Markdownは、表（テーブル）もあり、使える書式も文章を書く上で十分です。また、LaTeX, flow, sequence, mermaid をサポートしているので、数式、フローチャート、シーケンス図、ガントチャートなどもテキスト表記で描けます</p>
-</li>
-<li>
-<p><strong>互換性がある</strong><br>
-MarkdownからHTML、Word形式、PDFなど他のフォーマットに変換できます</p>
-</li>
-</ul>
-<p>Markdownは、シンプルで書式が使えて、互換性があるだけではありません。何よりも <strong>キーボードから手を放さぜずに書ける</strong>というのは、文章を書く上でとても大切なことです。</p>
-<h3 id="typoraは最強のmarkdownエディタ">Typoraは最強のMarkdownエディタ</h3>
-<p>多くのMarkdownエディタが、編集画面と表示画面の二画面で構成されていますが、Typoraは、<strong>WYSIWYG</strong>（<strong>W</strong>hat <strong>Y</strong>ou <strong>S</strong>ee <strong>I</strong>s <strong>W</strong>hat <strong>Y</strong>ou <strong>G</strong>et）なインターフェイスで、入力したものがそのまま描写されます。またフローチャート、シーケンス図、ガントチャートなどもコマンドベースで作成することができます。</p>
-<p>更には、後述するGUIでの表（テーブル）機能のサポート、Excelなどからの表のコピペ、画像コピペなど、コマンドで面倒な部分はGUIでサポートしてくれます。Typoraは、Linux/Mac/Windowsで動作し、現在は、β版ということで無料で利用できます。</p>
-<p><strong>Typoraの特徴</strong></p>
-<ul>
-<li>軽量でシンプルなエディタ</li>
-<li>WYSIWYGなインターフェイス</li>
-<li>フローチャート、シーケンス図など図が描写できる</li>
-<li>面倒なコマンドはGUIでサポート</li>
-</ul>
-<p>と、とっても便利なTyporaです。いま時点で最高のMarkdownエディタだと思います。</p>
-<h3 id="typoraでのmarkdown文法">TyporaでのMarkdown文法</h3>
-<p>Typoraは、下記の段落と改行以外については、標準のMarkdownに準拠しています。</p>
-<ul>
-<li>【目次】Markdownの文法</li>
-</ul>
+                    </div>
+                    
+                    <div class="post-content">
+                        <figure data-type="image" tabindex="1"><img src="https://drive.google.com/uc?id=16Gy6s7rc019NvEsBnVZS6w148lfTCn74" alt="最高のMarkdownエディタtypora" loading="lazy"></figure>
 <h4 id="段落と改行">段落と改行</h4>
 <p>ネット上で共有されている文章は、読み手の環境に依存するために改行はあまり使われていません。受けとったメールが変なところで改行されていて読みづらいと思ったことは、誰しもが経験したことがあるのではないでしょうか。</p>
 <p>文章を読みやすくするためには段落を使います。HTMLでは<p></p>で文章を囲みますが、MarkdownではEnterを押して改行すると次の段落になります。Markdownでも改行はあり、<code>半角スペース2つ</code>で改行なのですが、Typoraでは<code>SHIFT+ENTER</code>で改行となります。</p>
 <p>改行された<br>
 文章</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="見出し">見出し</h4>
 <p>見出しは6段階です。＃の数が少ない方が大きな見出しとなり、htmlのh1からh6タグまでに相当しています。</p>
 <pre><code># 見出し（h1）
@@ -169,7 +144,6 @@ MarkdownからHTML、Word形式、PDFなど他のフォーマットに変換で�
 </code></pre>
 <p><strong>Sample</strong><br>
 <a href="https://drive.google.com/uc?id=1N6lMrzYfOrT3eYWNyHgH1PK5zMLnOmXj"><img src="https://drive.google.com/uc?id=1HwFNtHCmBFlVOO8TZPlCOH3E4GtYH5sM" alt="見出しのサンプル" loading="lazy"></a></p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="リスト">リスト</h4>
 <p>リストは <code>-</code> か <code>*</code> です。Tabキーでインデントを付けることもできます。</p>
 <pre><code>- 順序なし１
@@ -213,7 +187,6 @@ MarkdownからHTML、Word形式、PDFなど他のフォーマットに変換で�
 <p><strong>Sample</strong></p>
 <p>チェック済み<br>
 未チェック</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="文字を強調する">文字を強調する</h4>
 <p>文字を <code>*（アスタリスク）</code>で囲むと斜体になります、アスタリスクふたつで囲むと太字で、三つで囲むとと斜体と太字の組み合わせとなります。</p>
 <pre><code>*斜体（イタリック）*
@@ -224,21 +197,18 @@ MarkdownからHTML、Word形式、PDFなど他のフォーマットに変換で�
 <p><em>Shatai(Italic)</em><br>
 <strong>太字</strong><br>
 *<strong>Bold &amp; Italic*</strong></p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="打消し線">打消し線</h4>
 <p>~（チルダ）2つで囲むと打消し線付きの文字となります。</p>
 <pre><code>~~打消し線~~
 </code></pre>
 <p><strong>Sample</strong></p>
 <p><s>打消し線</s></p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="リンク">リンク</h4>
 <p>参照リンクは、<a href="URL">タイトル</a>で記述します。</p>
 <pre><code>[象と散歩](https://walking-elephant.blogspot.com)
 </code></pre>
 <p><strong>Sample</strong></p>
 <p><a href="https://walking-elephant.blogspot.com/">象と散歩</a></p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="画像">画像</h4>
 <p>画像の差し込みは、参照リンクの記述と似ていますが、先頭に!（エクスクラメーション）を付けます。</p>
 <pre><code>![画像タイトル](画像URL)
@@ -246,7 +216,6 @@ MarkdownからHTML、Word形式、PDFなど他のフォーマットに変換で�
 <p>で指定します。Typoraでは、<code>![画像タイトル](</code>まで入力するとURL指定とフォルダからの画像選択の両方を促す表示となります。WEB上の画像を利用するのであれば ”画像のURLを入力” にURLを指定し、ローカルに保存されている画像を使う場合は、フォルダアイコンをクリックして画像を選択します。</p>
 <figure data-type="image" tabindex="2"><a href="https://drive.google.com/uc?id=1ujHDh55XK2OBxuqbAPVrnO2a8eOrji2U"><img src="https://drive.google.com/uc?id=1HK3Yhsra_3FTvG7jBWyuVWU538YEGrLl" alt="Typoraで画像挿入" loading="lazy"></a></figure>
 <p>もっと簡単に画像をコピー&amp;ペーストすることもできます。画像をコピペするとWindowsであれば、<code>C:\Users\ユーザ名\AppData\Roaming\Typora\typora-user-images\</code>に画像が保存されます。</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="引用">引用</h4>
 <p>引用は &gt; を使います。二重引用の場合は &gt;&gt; です。メールなどの引用符でも使いますから馴染みがあるかと思います。</p>
 <pre><code>&gt; 象と散歩をするようにゆっくりとデータ解析やマーケティングについて考えて
@@ -260,7 +229,6 @@ MarkdownからHTML、Word形式、PDFなど他のフォーマットに変換で�
 <p>象と散歩をするようにゆっくりとデータ解析やマーケティングについて考えてみようと思っていますが、物欲という雑念が払拭できません。趣味のエギング、アクアリム、三線は永遠の初心者です。</p>
 <p>【引用】<a href="https://walking-elephant.blogspot.com/">象と散歩</a></p>
 </blockquote>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="コード">コード</h4>
 <p>1行でコード（等幅フォントで整形）を記載する場合は、`（バッククォート）で囲みます。</p>
 <pre><code>`1+1=2`
@@ -271,13 +239,11 @@ function myFunction() {
 Browser.msgBox('hello, world!');
 }
 </code></pre>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="注釈">注釈</h4>
 <p>文献を引用した場合や、補足説明をする場合に使う注釈は、<code>[^注記号]</code> と <code>[^注記号]: 補足文</code> を使います。本文中の注記号にマウスオーバーすると補足文の内容が表示されます。</p>
 <p><strong>Sample</strong></p>
 <p>注釈のつけ方<a href="https://draft.blogger.com/blogger.g?blogID=8412600005850958865#dfref-footnote-1">1</a></p>
 <p>1 注釈1の補足<a href="https://draft.blogger.com/blogger.g?blogID=8412600005850958865#ref-footnote-1">↩</a></p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="表table">表（Table）</h4>
 <p>表（Table）は、各セルの内容を <code>|（パイプ）</code> で括ります。列は2列以上が必要で、最初の行はTable Header（TH）となり、2行目が表レイアウト、3行目からが、Table Data（TD）となります。2行目の表レイアウトは省略できます。</p>
 <pre><code>|TH1|TH2|TH3|
@@ -325,18 +291,15 @@ Browser.msgBox('hello, world!');
 </table>
 <p>Typoraの場合は、最初のヘッダー行のみ入力をしてエンターを押すと、表ツールが立ち上がるので、行、列の追加削除、文字位置などが簡単に行えます。</p>
 <figure data-type="image" tabindex="3"><a href="https://drive.google.com/uc?id=1lagUuiyrqrcWsx7z8rptepDJmEUuBBeg"><img src="https://drive.google.com/uc?id=1VEuBUm9VjqRACOl-e-a6QrNC3Mxz4gqL" alt="Typoraで表を作成" loading="lazy"></a></figure>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="水平線">水平線</h4>
 <p>水平線は、<code>***</code>, 若しくは、<code>---</code>で書きます。</p>
 <p><strong>Sample</strong></p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="エスケープ">エスケープ</h4>
 <p>Markdown として意味がある記号の前に、<code>\</code> を書くと文字をそのまま記述できます。</p>
 <pre><code>\*\*太字になりません\*\*
 </code></pre>
 <p><strong>Sample</strong></p>
 <p><strong>太字になりません</strong></p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="目次">目次</h4>
 <p>Tyoraで目次を作成するときは、<code>[TOC]</code>と記載するだけです。見出しの1~6が目次となります。</p>
 <h3 id="typora-の文法サポート">Typora の文法サポート</h3>
@@ -348,14 +311,12 @@ Browser.msgBox('hello, world!');
 </code></pre>
 <p><strong>Sample</strong></p>
 <p>H2O</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="上付き文字">上付き文字</h4>
 <p>上付き文字は、^（ハット）で囲みます。</p>
 <pre><code>X^2^
 </code></pre>
 <p><strong>Sample</strong></p>
 <p>X2</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="ハイライト">ハイライト</h4>
 <p>文字をハイライトするときは、=（イコール）ふたつで囲みます。</p>
 <pre><code>==ハイライト==
@@ -372,7 +333,6 @@ Browser.msgBox('hello, world!');
 </code></pre>
 <p><strong>Sample</strong></p>
 <p>😄😓😢👍🐘</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h3 id="htmlタグで文字装飾をする">HTMLタグで文字装飾をする</h3>
 <p>TyporaではHTMLタグもそのまま記載できます。文字色ぐらいはMarkdownでも対応してもらいたいところですが、下線、文字色、文字寄せ、ルビ文字などは、HTMLタグで記述します。</p>
 <h4 id="htmlで下線">HTMLで下線</h4>
@@ -392,7 +352,6 @@ Browser.msgBox('hello, world!');
 <p>文字を赤色にする方法<br>
 文字を青色にする方法<br>
 文字を灰色にする方法</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="htmlで文字寄せ">HTMLで文字寄せ</h4>
 <p>文字寄せは divタグ の style属性 を使います。</p>
 <pre><code>&lt;div style=&quot;text-align: right;&quot;&gt;
@@ -410,14 +369,12 @@ Browser.msgBox('hello, world!');
 <p>中央寄せ</p>
 <p>左寄せ</p>
 <p>追記：2019.08 文字寄せについて追記しました。</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="htmlでルビ文字">HTMLでルビ文字</h4>
 <p>ルビ文字はhtmlタグ<code>&lt;ruby&gt;</code>を使います。</p>
 <pre><code>&lt;ruby&gt;霰&lt;rt&gt;あられ&lt;/rt&gt;&lt;/ruby&gt;
 </code></pre>
 <p><strong>Sample</strong></p>
 <p>霰あられ</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h3 id="latexで文字装飾をする">LaTeXで文字装飾をする</h3>
 <p>Typoraの文法サポートでインライン数式をチェックするとLaTeXが使えます。LaTeXは、数式の記述や論文の体裁を整えるためのものですが、ちょっと構文が面倒です。[<a href="https://www.amazon.co.jp/gp/product/4774187054/ref=as_li_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4774187054&amp;linkCode=as2&amp;tag=walkingelepha-22&amp;linkId=a79235db60af40022b07a5b523059a01">改訂第7版]LaTeX2ε美文書作成入門</a> など書籍で勉強するか、<a href="http://www.latex-cmd.com/">LaTeXコマンド集</a> を参照してください。</p>
 <p>TyporaでLaTexを使うには、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">（</mi><mi mathvariant="normal">ダ</mi><mi mathvariant="normal">ラ</mi><mi mathvariant="normal">ー</mi><mi mathvariant="normal">）</mi><mi mathvariant="normal">で</mi><mi mathvariant="normal">囲</mi><mi mathvariant="normal">み</mi><mi mathvariant="normal">ま</mi><mi mathvariant="normal">す</mi><mi mathvariant="normal">。</mi><mi mathvariant="normal">複</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">行</mi><mi mathvariant="normal">に</mi><mi mathvariant="normal">ま</mi><mi mathvariant="normal">た</mi><mi mathvariant="normal">が</mi><mi mathvariant="normal">る</mi><mi mathvariant="normal">場</mi><mi mathvariant="normal">合</mi><mi mathvariant="normal">は</mi><mi mathvariant="normal">、</mi></mrow><annotation encoding="application/x-tex">（ダラー）で囲みます。複数行にまたがる場合は、</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord cjk_fallback">（</span><span class="mord cjk_fallback">ダ</span><span class="mord cjk_fallback">ラ</span><span class="mord cjk_fallback">ー</span><span class="mord cjk_fallback">）</span><span class="mord cjk_fallback">で</span><span class="mord cjk_fallback">囲</span><span class="mord cjk_fallback">み</span><span class="mord cjk_fallback">ま</span><span class="mord cjk_fallback">す</span><span class="mord cjk_fallback">。</span><span class="mord cjk_fallback">複</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">行</span><span class="mord cjk_fallback">に</span><span class="mord cjk_fallback">ま</span><span class="mord cjk_fallback">た</span><span class="mord cjk_fallback">が</span><span class="mord cjk_fallback">る</span><span class="mord cjk_fallback">場</span><span class="mord cjk_fallback">合</span><span class="mord cjk_fallback">は</span><span class="mord cjk_fallback">、</span></span></span></span>$で囲みます。</p>
@@ -427,7 +384,6 @@ Browser.msgBox('hello, world!');
 </code></pre>
 <p><strong>Sample</strong><br>
 <a href="https://drive.google.com/uc?id=12FuFdGHnYR3SvOTcggQw7hkEjrVS4BXJ"><img src="https://drive.google.com/uc?id=1EVhuvw6-V_vCS6Nxiwlw7y9UOVCNRLOZ" alt="数式" loading="lazy"></a></p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h4 id="latexで文字色">LaTexで文字色</h4>
 <p>LaTeXを使って文字色を付けることもできます。</p>
 <pre><code>$ \textcolor{red}{文字色を赤色にする方法} $
@@ -438,7 +394,6 @@ $ \textcolor{gray}{文字色を灰色にする方法} $
 <p>文字色を赤色にする方法<br>
 文字色を青色にする方法<br>
 文字色を灰色にする方法</p>
-<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
 <h3 id="markdownで図形も描ける">Markdownで図形も描ける</h3>
 <p>Typoraでは、文法サポートのダイアグラムをチェックしていると、フローチャート、シーケンス図、ガントチャートいった図形もプレーンテキストで表記することができます。こちらの記述方法については、別途、書きたいと思います。</p>
 <p>簡単シンプルで色々できるMarkdownをTyporaで始めましょう。</p>
@@ -447,29 +402,49 @@ $ \textcolor{gray}{文字色を灰色にする方法} $
 参考にしてください。</p>
 <p>https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html</p>
 
-                                </div>
-                    </article>
-                    <!--  -->
-                    
-                        <div class="next-post">
-                            <div class="next">下一篇</div>
-                            <a href="https://moeo8.github.io/TiKPMk8ps/">
-                                <h3 class="post-title">
-                                    分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质
-                                </h3>
-                            </a>
-                        </div>
-                        
-                            <div id="disqus_thread"></div>
-                            <div id="gitalk-container"></div>
+                    </div>
+                </article>
+                <!--  -->
+                
+                <div class="next-post">
+                    <div class="next">下一篇</div>
+                    <a href="https://moeo8.github.io/TiKPMk8ps/">
+                        <h3 class="post-title">
+                            分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质
+                        </h3>
+                    </a>
                 </div>
-                <!-- middle -->
-                <div class="main-container-middle"></div>
-                <!-- right -->
-                <div id="sidebar" class="main-container-right">
-                    
-                        <!-- toc -->
-                        
+                
+                <div id="disqus_thread"></div>
+                <div id="gitalk-container"></div>
+                <div id="vcomments"></div>
+                <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> |
+  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+            </div>
+            <!-- middle -->
+            <div class="main-container-middle"></div>
+            <!-- right -->
+            <div id="sidebar" class="main-container-right">
+                
+                <!-- toc -->
+                
     <div class="toc-card i-card ">
         <div class="toc-title i-card-title">目录</div>
         <div class="toc-content">
@@ -478,9 +453,7 @@ $ \textcolor{gray}{文字色を灰色にする方法} $
 <ul>
 <li>
 <ul>
-<li><a href="#markdown%E5%BD%A2%E5%BC%8F%E3%81%AE%E7%89%B9%E5%BE%B4">Markdown形式の特徴</a></li>
-<li><a href="#typora%E3%81%AF%E6%9C%80%E5%BC%B7%E3%81%AEmarkdown%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF">Typoraは最強のMarkdownエディタ</a></li>
-<li><a href="#typora%E3%81%A7%E3%81%AEmarkdown%E6%96%87%E6%B3%95">TyporaでのMarkdown文法</a>
+<li>
 <ul>
 <li><a href="#%E6%AE%B5%E8%90%BD%E3%81%A8%E6%94%B9%E8%A1%8C">段落と改行</a></li>
 <li><a href="#%E8%A6%8B%E5%87%BA%E3%81%97">見出し</a></li>
@@ -554,34 +527,23 @@ $ \textcolor{gray}{文字色を灰色にする方法} $
         </script>
     </div>
     
-                            
+                
 
                 </div>
-
-
-
-
             </div>
 
-
-            <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
-
-    </div>
-    <script>
-        $('#sidebar').stickySidebar({
-            topSpacing: 80,
-            // bottomSpacing: 60
-        });
-    </script>
-    
+            </div>
+            <script>
+                $('#sidebar').stickySidebar({
+                    topSpacing: 80,
+                    // bottomSpacing: 60
+                });
+            </script>
+            <!-- ?????? -->
+            <script>
+                hljs.initHighlightingOnLoad()
+              </script>
+            
 </body>
 
 </html>

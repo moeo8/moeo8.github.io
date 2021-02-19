@@ -7,16 +7,16 @@
 <title>
     Gridea | 温故而知新
 </title>
-<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613742541656">
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613744126108">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.bootcdn.net/ajax/libs/KaTeX/0.11.1/katex.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
 <!-- js -->
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://moeo8.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
 
 
 </head>
@@ -27,7 +27,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://moeo8.github.io">
-                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613742541656" alt="">
+                <img class="avatar" src="https://moeo8.github.io/images/avatar.png?v=1613744126108" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -96,47 +96,50 @@
             <div id="main-content" class="post-container main-container">
                 <div id="content" class="main-container-left">
                     
-    <div class="i-card">
-        <b>标签：#
+<div class="i-card">
+    <b>标签：#
         Gridea</b>
-    </div>
-    
+</div>
+
         
-            <article class="post i-card">
-                <h2 class="post-title">
-                    <a href="https://moeo8.github.io/hello-gridea/">
-                        Hello Gridea
-                    </a>
-                </h2>
-                <div class="post-info">
-                    <time class="post-time">2018-12-12</time>
-                    
-                        <a href="https://moeo8.github.io/tag/rOWjDdgpM/" class="post-tag i-tag
-                            i-tag-primary">
+<article class="post i-card">
+    <h2 class="post-title">
+        <a href="https://moeo8.github.io/hello-gridea/">
+            Hello Gridea
+        </a>
+    </h2>
+    <div class="post-info">
+        <time class="post-time">2018-12-12</time>
+        
+        <a href="https://moeo8.github.io/tag/rOWjDdgpM/"
+            class="post-tag i-tag
+                            i-tag-warning">
             #Gridea
         </a>
-                        
-                </div>
-                <div class="post-article">
-                    
-                        <a href="https://moeo8.github.io/hello-gridea/" class="post-feature-image" style="background-image:url(https://moeo8.github.io/post-images/hello-gridea.png) ">
-                        </a>
-                        
-                            <div class="post-content">
-                                
-                                    <div class="post-content-abstract">
-                                        <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+        
+    </div>
+    <div class="post-article">
+        
+        <a href="https://moeo8.github.io/hello-gridea/" class="post-feature-image" style="background-image:url(https://moeo8.github.io/post-images/hello-gridea.png) ">
+        </a>
+        
+
+        <div class="post-content">
+            
+            <div class="post-content-abstract">
+                <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-                                    </div>
-                                    
-                                            <a class="btn btn-text" href="https://moeo8.github.io/hello-gridea/">Read More ~</a>
-                            </div>
-                </div>
-            </article>
+            </div>
             
-                <!-- 翻页 -->
-                
+            <a class="btn btn-text" href="https://moeo8.github.io/hello-gridea/">Read More ~</a>
+        </div>
+    </div>
+</article>
+
+<!-- 翻页 -->
+
+
                 </div>
                 <!--  -->
                 <div class="main-container-middle"></div>
@@ -146,7 +149,7 @@
                     <!-- 个人信息 -->
                     
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://moeo8.github.io/images/avatar.png?v=1613742541656)">
+        <div class="id_card-avatar" style="background-image: url(https://moeo8.github.io/images/avatar.png?v=1613744126108)">
         </div>
         <h1 class="id_card-title">
             温故而知新
@@ -179,12 +182,22 @@
 
 
             <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> |
   <a class="rss" href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a>
 </div>
-
 <script>
-  hljs.initHighlightingOnLoad()
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
 </script>
 
     </div>
