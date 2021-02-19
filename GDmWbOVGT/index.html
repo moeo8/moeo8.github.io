@@ -1,0 +1,492 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Note: TyporaでMarkdownを始めよう！ | 温故而知新</title>
+
+<link rel="shortcut icon" href="https://moeo8.github.io/favicon.ico?v=1613742173737">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://moeo8.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            温故而知新
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1613742173737" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    Note: TyporaでMarkdownを始めよう！
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-02-19 ·
+                    </time>
+                    
+                        <a href="https://moeo8.github.io/tag/note/" class="post-tags">
+                            # note
+                        </a>
+                    
+                        <a href="https://moeo8.github.io/tag/typora/" class="post-tags">
+                            # typora
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <figure data-type="image" tabindex="1"><img src="https://drive.google.com/uc?id=16Gy6s7rc019NvEsBnVZS6w148lfTCn74" alt="最高のMarkdownエディタtypora" loading="lazy"></figure>
+<p>Markdownは、<strong>文章を記述するための軽量マークアップ言語</strong>でネット上で文章を共有するのに便利に使えます。拡張子は.mdですが、中身はテキスト文章なので軽量ですし、特殊なエディタやビューアーがなくても中身を確認できます。</p>
+<p>IT技術者でなくてもブログの下書き、メモやレポートなどにも活用できます。</p>
+<h3 id="markdown形式の特徴">Markdown形式の特徴</h3>
+<ul>
+<li>
+<p>シンプル</p>
+<p>簡単な記号で書式を指定できるので、HTMLタグよりも100倍簡単です</p>
+</li>
+<li>
+<p><strong>書式が使える</strong><br>
+Markdownは、表（テーブル）もあり、使える書式も文章を書く上で十分です。また、LaTeX, flow, sequence, mermaid をサポートしているので、数式、フローチャート、シーケンス図、ガントチャートなどもテキスト表記で描けます</p>
+</li>
+<li>
+<p><strong>互換性がある</strong><br>
+MarkdownからHTML、Word形式、PDFなど他のフォーマットに変換できます</p>
+</li>
+</ul>
+<p>Markdownは、シンプルで書式が使えて、互換性があるだけではありません。何よりも <strong>キーボードから手を放さぜずに書ける</strong>というのは、文章を書く上でとても大切なことです。</p>
+<h3 id="typoraは最強のmarkdownエディタ">Typoraは最強のMarkdownエディタ</h3>
+<p>多くのMarkdownエディタが、編集画面と表示画面の二画面で構成されていますが、Typoraは、<strong>WYSIWYG</strong>（<strong>W</strong>hat <strong>Y</strong>ou <strong>S</strong>ee <strong>I</strong>s <strong>W</strong>hat <strong>Y</strong>ou <strong>G</strong>et）なインターフェイスで、入力したものがそのまま描写されます。またフローチャート、シーケンス図、ガントチャートなどもコマンドベースで作成することができます。</p>
+<p>更には、後述するGUIでの表（テーブル）機能のサポート、Excelなどからの表のコピペ、画像コピペなど、コマンドで面倒な部分はGUIでサポートしてくれます。Typoraは、Linux/Mac/Windowsで動作し、現在は、β版ということで無料で利用できます。</p>
+<p><strong>Typoraの特徴</strong></p>
+<ul>
+<li>軽量でシンプルなエディタ</li>
+<li>WYSIWYGなインターフェイス</li>
+<li>フローチャート、シーケンス図など図が描写できる</li>
+<li>面倒なコマンドはGUIでサポート</li>
+</ul>
+<p>と、とっても便利なTyporaです。いま時点で最高のMarkdownエディタだと思います。</p>
+<h3 id="typoraでのmarkdown文法">TyporaでのMarkdown文法</h3>
+<p>Typoraは、下記の段落と改行以外については、標準のMarkdownに準拠しています。</p>
+<ul>
+<li>【目次】Markdownの文法</li>
+</ul>
+<h4 id="段落と改行">段落と改行</h4>
+<p>ネット上で共有されている文章は、読み手の環境に依存するために改行はあまり使われていません。受けとったメールが変なところで改行されていて読みづらいと思ったことは、誰しもが経験したことがあるのではないでしょうか。</p>
+<p>文章を読みやすくするためには段落を使います。HTMLでは<p></p>で文章を囲みますが、MarkdownではEnterを押して改行すると次の段落になります。Markdownでも改行はあり、<code>半角スペース2つ</code>で改行なのですが、Typoraでは<code>SHIFT+ENTER</code>で改行となります。</p>
+<p>改行された<br>
+文章</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="見出し">見出し</h4>
+<p>見出しは6段階です。＃の数が少ない方が大きな見出しとなり、htmlのh1からh6タグまでに相当しています。</p>
+<pre><code># 見出し（h1）
+## 見出し（h2）
+### 見出し（h3）
+#### 見出し（h4）
+##### 見出し（h5）
+###### 見出し（h6）
+</code></pre>
+<p><strong>Sample</strong><br>
+<a href="https://drive.google.com/uc?id=1N6lMrzYfOrT3eYWNyHgH1PK5zMLnOmXj"><img src="https://drive.google.com/uc?id=1HwFNtHCmBFlVOO8TZPlCOH3E4GtYH5sM" alt="見出しのサンプル" loading="lazy"></a></p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="リスト">リスト</h4>
+<p>リストは <code>-</code> か <code>*</code> です。Tabキーでインデントを付けることもできます。</p>
+<pre><code>- 順序なし１
+ - インデント１
+  - インデント２
+- 順序なし２
+</code></pre>
+<p><strong>Sample</strong></p>
+<ul>
+<li>順序なし１
+<ul>
+<li>インデント１
+<ul>
+<li>インデント２</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>順序なし２</li>
+</ul>
+<p>番号を付けたリストも作成できます。番号は、1.からでなくても始められます。Enterで次のリストとなり、文字を入力せずに続けてEnterするとリストは終了します。</p>
+<pre><code>1. 順序付き１
+ 1. インデント1
+ 2. インデント2
+2．順序付き２
+</code></pre>
+<p><strong>Sample</strong></p>
+<ol>
+<li>順序付き１
+<ol>
+<li>インデント1</li>
+<li>インデント2</li>
+</ol>
+</li>
+<li>順序付き２</li>
+</ol>
+<p>チェックボックスも作ることができます。</p>
+<pre><code>- [x] チェック済み
+- [ ] 未チェック
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>チェック済み<br>
+未チェック</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="文字を強調する">文字を強調する</h4>
+<p>文字を <code>*（アスタリスク）</code>で囲むと斜体になります、アスタリスクふたつで囲むと太字で、三つで囲むとと斜体と太字の組み合わせとなります。</p>
+<pre><code>*斜体（イタリック）*
+**太字**
+***Bold &amp; Italic***
+</code></pre>
+<p><strong>Sample</strong></p>
+<p><em>Shatai(Italic)</em><br>
+<strong>太字</strong><br>
+*<strong>Bold &amp; Italic*</strong></p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="打消し線">打消し線</h4>
+<p>~（チルダ）2つで囲むと打消し線付きの文字となります。</p>
+<pre><code>~~打消し線~~
+</code></pre>
+<p><strong>Sample</strong></p>
+<p><s>打消し線</s></p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="リンク">リンク</h4>
+<p>参照リンクは、<a href="URL">タイトル</a>で記述します。</p>
+<pre><code>[象と散歩](https://walking-elephant.blogspot.com)
+</code></pre>
+<p><strong>Sample</strong></p>
+<p><a href="https://walking-elephant.blogspot.com/">象と散歩</a></p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="画像">画像</h4>
+<p>画像の差し込みは、参照リンクの記述と似ていますが、先頭に!（エクスクラメーション）を付けます。</p>
+<pre><code>![画像タイトル](画像URL)
+</code></pre>
+<p>で指定します。Typoraでは、<code>![画像タイトル](</code>まで入力するとURL指定とフォルダからの画像選択の両方を促す表示となります。WEB上の画像を利用するのであれば ”画像のURLを入力” にURLを指定し、ローカルに保存されている画像を使う場合は、フォルダアイコンをクリックして画像を選択します。</p>
+<figure data-type="image" tabindex="2"><a href="https://drive.google.com/uc?id=1ujHDh55XK2OBxuqbAPVrnO2a8eOrji2U"><img src="https://drive.google.com/uc?id=1HK3Yhsra_3FTvG7jBWyuVWU538YEGrLl" alt="Typoraで画像挿入" loading="lazy"></a></figure>
+<p>もっと簡単に画像をコピー&amp;ペーストすることもできます。画像をコピペするとWindowsであれば、<code>C:\Users\ユーザ名\AppData\Roaming\Typora\typora-user-images\</code>に画像が保存されます。</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="引用">引用</h4>
+<p>引用は &gt; を使います。二重引用の場合は &gt;&gt; です。メールなどの引用符でも使いますから馴染みがあるかと思います。</p>
+<pre><code>&gt; 象と散歩をするようにゆっくりとデータ解析やマーケティングについて考えて
+&gt; みようと思っていますが、物欲という雑念が払拭できません。
+&gt; 趣味のエギング、アクアリム、三線は永遠の初心者です。
+&gt;
+&gt; 【引用】[象と散歩](https://walking-elephant.blogspot.com)
+</code></pre>
+<p><strong>Sample</strong></p>
+<blockquote>
+<p>象と散歩をするようにゆっくりとデータ解析やマーケティングについて考えてみようと思っていますが、物欲という雑念が払拭できません。趣味のエギング、アクアリム、三線は永遠の初心者です。</p>
+<p>【引用】<a href="https://walking-elephant.blogspot.com/">象と散歩</a></p>
+</blockquote>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="コード">コード</h4>
+<p>1行でコード（等幅フォントで整形）を記載する場合は、`（バッククォート）で囲みます。</p>
+<pre><code>`1+1=2`
+</code></pre>
+<p>複数行の場合は <code>（バッククォート）３つで括りますが、Typoraの場合、`````で改行、若しくは、```` 言語名</code>でコード入力用のボックスが生成されます。</p>
+<pre><code>​``` gas
+function myFunction() {
+Browser.msgBox('hello, world!');
+}
+</code></pre>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="注釈">注釈</h4>
+<p>文献を引用した場合や、補足説明をする場合に使う注釈は、<code>[^注記号]</code> と <code>[^注記号]: 補足文</code> を使います。本文中の注記号にマウスオーバーすると補足文の内容が表示されます。</p>
+<p><strong>Sample</strong></p>
+<p>注釈のつけ方<a href="https://draft.blogger.com/blogger.g?blogID=8412600005850958865#dfref-footnote-1">1</a></p>
+<p>1 注釈1の補足<a href="https://draft.blogger.com/blogger.g?blogID=8412600005850958865#ref-footnote-1">↩</a></p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="表table">表（Table）</h4>
+<p>表（Table）は、各セルの内容を <code>|（パイプ）</code> で括ります。列は2列以上が必要で、最初の行はTable Header（TH）となり、2行目が表レイアウト、3行目からが、Table Data（TD）となります。2行目の表レイアウトは省略できます。</p>
+<pre><code>|TH1|TH2|TH3|
+|----|----|----|
+|TD1|TD2|TD3|
+</code></pre>
+<p><strong>Sample</strong></p>
+<table>
+<thead>
+<tr>
+<th>TH1</th>
+<th>TH2</th>
+<th>TH3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TD1</td>
+<td>TD2</td>
+<td>TD3</td>
+</tr>
+</tbody>
+</table>
+<p>表の幅は100％（表示画面の最大）ですが、各セルの比率は、<code>-（ハイフン）</code>で変更することができます。またセル内の左揃え、中央揃え、右揃えは、<code>:(コロン)</code>で表します。</p>
+<pre><code>|左揃え|中央揃え|右揃え|
+|:--|:----:|--:|
+|TD1 |TD2 |TD3 |
+</code></pre>
+<p><strong>Sample</strong></p>
+<table>
+<thead>
+<tr>
+<th>左揃え</th>
+<th>中央揃え</th>
+<th>右揃え</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TD1</td>
+<td>TD2</td>
+<td>TD3</td>
+</tr>
+</tbody>
+</table>
+<p>Typoraの場合は、最初のヘッダー行のみ入力をしてエンターを押すと、表ツールが立ち上がるので、行、列の追加削除、文字位置などが簡単に行えます。</p>
+<figure data-type="image" tabindex="3"><a href="https://drive.google.com/uc?id=1lagUuiyrqrcWsx7z8rptepDJmEUuBBeg"><img src="https://drive.google.com/uc?id=1VEuBUm9VjqRACOl-e-a6QrNC3Mxz4gqL" alt="Typoraで表を作成" loading="lazy"></a></figure>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="水平線">水平線</h4>
+<p>水平線は、<code>***</code>, 若しくは、<code>---</code>で書きます。</p>
+<p><strong>Sample</strong></p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="エスケープ">エスケープ</h4>
+<p>Markdown として意味がある記号の前に、<code>\</code> を書くと文字をそのまま記述できます。</p>
+<pre><code>\*\*太字になりません\*\*
+</code></pre>
+<p><strong>Sample</strong></p>
+<p><strong>太字になりません</strong></p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="目次">目次</h4>
+<p>Tyoraで目次を作成するときは、<code>[TOC]</code>と記載するだけです。見出しの1~6が目次となります。</p>
+<h3 id="typora-の文法サポート">Typora の文法サポート</h3>
+<p>Typoraでは、メニューバーの &quot;ファイル(F) → 設定&quot; で文法サポートの各項目をチェックすると、下付き、上付き文字、ハイライトがサポートされます（ダイアグラムについては別途説明）。</p>
+<figure data-type="image" tabindex="4"><a href="https://drive.google.com/uc?id=1wD1S6Bf5EjQoTGl3pkor3QIjAUG5uTtj"><img src="https://drive.google.com/uc?id=1XOFrJoOzaQKk2jlYordjwIt2NSDDVlgn" alt="Typora文法サポート" loading="lazy"></a></figure>
+<h4 id="下付き文字">下付き文字</h4>
+<p>下付き文字は、~（チルダ）で囲みます。</p>
+<pre><code>H~2~O
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>H2O</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="上付き文字">上付き文字</h4>
+<p>上付き文字は、^（ハット）で囲みます。</p>
+<pre><code>X^2^
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>X2</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="ハイライト">ハイライト</h4>
+<p>文字をハイライトするときは、=（イコール）ふたつで囲みます。</p>
+<pre><code>==ハイライト==
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>ハイライト</p>
+<h4 id="絵文字">絵文字</h4>
+<p>Markdownでは、絵文字コードを :（コロン）で囲って、絵文字を埋め込めむことができます。しかし、絵文字コードを覚えるのは大変です。絵文字を使うのであれば、<a href="https://www.webfx.com/tools/emoji-cheat-sheet/">EMOJI CHEAT SHEET</a> に絵文字の一覧があります。絵文字をクリックするとコードがコピーされるので便利です。但し、<code>:simple_smile:</code>などのいくつかの絵文字は使えませんでした。</p>
+<pre><code>:smile:
+:sweat:
+:cry:
+:thumbsup:
+:elephant:
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>😄😓😢👍🐘</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h3 id="htmlタグで文字装飾をする">HTMLタグで文字装飾をする</h3>
+<p>TyporaではHTMLタグもそのまま記載できます。文字色ぐらいはMarkdownでも対応してもらいたいところですが、下線、文字色、文字寄せ、ルビ文字などは、HTMLタグで記述します。</p>
+<h4 id="htmlで下線">HTMLで下線</h4>
+<p>下線はhtmlタグ<code>&lt;u&gt;</code>を使います。</p>
+<pre><code>&lt;u&gt;下線&lt;/u&gt;
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>下線</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="htmlで文字色">HTMLで文字色</h4>
+<p>文字色はhtmlタグ<code>&lt;font&gt;</code>を使います。</p>
+<pre><code>&lt;font color=&quot;red&quot;&gt;文字を赤色にする方法&lt;/font&gt;
+&lt;font color=&quot;blue&quot;&gt;文字を青色にする方法&lt;/font&gt;
+&lt;font color=&quot;gray&quot;&gt;文字を灰色にする方法&lt;/font&gt;
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>文字を赤色にする方法<br>
+文字を青色にする方法<br>
+文字を灰色にする方法</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="htmlで文字寄せ">HTMLで文字寄せ</h4>
+<p>文字寄せは divタグ の style属性 を使います。</p>
+<pre><code>&lt;div style=&quot;text-align: right;&quot;&gt;
+右寄せ
+&lt;/div&gt;
+&lt;div style=”text-aligh: center;”&gt;
+中央寄せ
+&lt;/div&gt;
+&lt;div style=”text-align: left;”&gt;
+左寄せ
+&lt;/div&gt;
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>右寄せ</p>
+<p>中央寄せ</p>
+<p>左寄せ</p>
+<p>追記：2019.08 文字寄せについて追記しました。</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="htmlでルビ文字">HTMLでルビ文字</h4>
+<p>ルビ文字はhtmlタグ<code>&lt;ruby&gt;</code>を使います。</p>
+<pre><code>&lt;ruby&gt;霰&lt;rt&gt;あられ&lt;/rt&gt;&lt;/ruby&gt;
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>霰あられ</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h3 id="latexで文字装飾をする">LaTeXで文字装飾をする</h3>
+<p>Typoraの文法サポートでインライン数式をチェックするとLaTeXが使えます。LaTeXは、数式の記述や論文の体裁を整えるためのものですが、ちょっと構文が面倒です。[<a href="https://www.amazon.co.jp/gp/product/4774187054/ref=as_li_tl?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4774187054&amp;linkCode=as2&amp;tag=walkingelepha-22&amp;linkId=a79235db60af40022b07a5b523059a01">改訂第7版]LaTeX2ε美文書作成入門</a> など書籍で勉強するか、<a href="http://www.latex-cmd.com/">LaTeXコマンド集</a> を参照してください。</p>
+<p>TyporaでLaTexを使うには、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">（</mi><mi mathvariant="normal">ダ</mi><mi mathvariant="normal">ラ</mi><mi mathvariant="normal">ー</mi><mi mathvariant="normal">）</mi><mi mathvariant="normal">で</mi><mi mathvariant="normal">囲</mi><mi mathvariant="normal">み</mi><mi mathvariant="normal">ま</mi><mi mathvariant="normal">す</mi><mi mathvariant="normal">。</mi><mi mathvariant="normal">複</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">行</mi><mi mathvariant="normal">に</mi><mi mathvariant="normal">ま</mi><mi mathvariant="normal">た</mi><mi mathvariant="normal">が</mi><mi mathvariant="normal">る</mi><mi mathvariant="normal">場</mi><mi mathvariant="normal">合</mi><mi mathvariant="normal">は</mi><mi mathvariant="normal">、</mi></mrow><annotation encoding="application/x-tex">（ダラー）で囲みます。複数行にまたがる場合は、</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord cjk_fallback">（</span><span class="mord cjk_fallback">ダ</span><span class="mord cjk_fallback">ラ</span><span class="mord cjk_fallback">ー</span><span class="mord cjk_fallback">）</span><span class="mord cjk_fallback">で</span><span class="mord cjk_fallback">囲</span><span class="mord cjk_fallback">み</span><span class="mord cjk_fallback">ま</span><span class="mord cjk_fallback">す</span><span class="mord cjk_fallback">。</span><span class="mord cjk_fallback">複</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">行</span><span class="mord cjk_fallback">に</span><span class="mord cjk_fallback">ま</span><span class="mord cjk_fallback">た</span><span class="mord cjk_fallback">が</span><span class="mord cjk_fallback">る</span><span class="mord cjk_fallback">場</span><span class="mord cjk_fallback">合</span><span class="mord cjk_fallback">は</span><span class="mord cjk_fallback">、</span></span></span></span>$で囲みます。</p>
+<h4 id="latexで数式">LaTexで数式</h4>
+<p>数式はこんな風に書きます。</p>
+<pre><code>$ \ce{CH4 + 2 $\left( \ce{O2 + 79/21 N2} \right)$} $
+</code></pre>
+<p><strong>Sample</strong><br>
+<a href="https://drive.google.com/uc?id=12FuFdGHnYR3SvOTcggQw7hkEjrVS4BXJ"><img src="https://drive.google.com/uc?id=1EVhuvw6-V_vCS6Nxiwlw7y9UOVCNRLOZ" alt="数式" loading="lazy"></a></p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h4 id="latexで文字色">LaTexで文字色</h4>
+<p>LaTeXを使って文字色を付けることもできます。</p>
+<pre><code>$ \textcolor{red}{文字色を赤色にする方法} $
+$ \textcolor{blue}{文字色を青色にする方法} $
+$ \textcolor{gray}{文字色を灰色にする方法} $
+</code></pre>
+<p><strong>Sample</strong></p>
+<p>文字色を赤色にする方法<br>
+文字色を青色にする方法<br>
+文字色を灰色にする方法</p>
+<p><a href="https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html#markdown">Markdownの文法（目次）へ戻る</a></p>
+<h3 id="markdownで図形も描ける">Markdownで図形も描ける</h3>
+<p>Typoraでは、文法サポートのダイアグラムをチェックしていると、フローチャート、シーケンス図、ガントチャートいった図形もプレーンテキストで表記することができます。こちらの記述方法については、別途、書きたいと思います。</p>
+<p>簡単シンプルで色々できるMarkdownをTyporaで始めましょう。</p>
+<h3 id="typora-で-markdown-シリーズ">Typora で Markdown シリーズ</h3>
+<p>Typora での Markdown の記述方法については、下記のシリーズで紹介しています。<br>
+参考にしてください。</p>
+<p>https://walking-elephant.blogspot.com/2019/07/typoramarkdown.html</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://moeo8.github.io/TiKPMk8ps/" class="post-title gt-a-link">
+                    分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">The universe has to move forward. Pain and loss, they define us as much as happiness or love. 
+宇宙必须向前发展。痛苦与失去和幸福与爱一样定义了我们。</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://moeo8.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
