@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.moeo.info</id>
     <title>温故而知新</title>
-    <updated>2021-02-20T13:45:57.705Z</updated>
+    <updated>2021-02-20T13:51:25.404Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.moeo.info"/>
     <link rel="self" href="https://www.moeo.info/atom.xml"/>
@@ -12,6 +12,13 @@
     <logo>https://www.moeo.info/images/avatar.png</logo>
     <icon>https://www.moeo.info/favicon.ico</icon>
     <rights>All rights reserved 2021, 温故而知新</rights>
+    <entry>
+        <title type="html"><![CDATA[github pages 添加域名]]></title>
+        <id>https://www.moeo.info/-cXAdcbxy/</id>
+        <link href="https://www.moeo.info/-cXAdcbxy/">
+        </link>
+        <updated>2021-02-20T14:50:24.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[主题代码完善]]></title>
         <id>https://www.moeo.info/U6wL9oGRi/</id>
