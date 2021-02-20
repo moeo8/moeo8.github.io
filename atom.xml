@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.moeo.info</id>
     <title>温故而知新</title>
-    <updated>2021-02-20T13:51:25.404Z</updated>
+    <updated>2021-02-20T13:52:37.984Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.moeo.info"/>
     <link rel="self" href="https://www.moeo.info/atom.xml"/>
@@ -41,18 +41,18 @@
         <updated>2021-02-19T20:35:51.000Z</updated>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Note: TyporaでMarkdownを始めよう！]]></title>
+        <id>https://www.moeo.info/GDmWbOVGT/</id>
+        <link href="https://www.moeo.info/GDmWbOVGT/">
+        </link>
+        <updated>2021-02-19T16:40:47.000Z</updated>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[BS CSの違い]]></title>
         <id>https://www.moeo.info/ZWzA4H_-t/</id>
         <link href="https://www.moeo.info/ZWzA4H_-t/">
         </link>
         <updated>2021-02-19T16:15:40.000Z</updated>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Note: TyporaでMarkdownを始めよう！]]></title>
-        <id>https://www.moeo.info/GDmWbOVGT/</id>
-        <link href="https://www.moeo.info/GDmWbOVGT/">
-        </link>
-        <updated>2021-02-19T15:40:47.000Z</updated>
     </entry>
     <entry>
         <title type="html"><![CDATA[分享：池田大作幸福思想的几个支点 ——兼谈幸福的本质]]></title>
