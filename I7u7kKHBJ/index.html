@@ -170,7 +170,7 @@
                     <article class="post-wrap">
                         <header class="post-header">
                             <h1 class="post-title">
-                                Gridea ＋ Github Pages 添加自定义域名
+                                Gridea添加Gitalk，Disqus评论系统
                             </h1>
                             
                                 <!--en-->
@@ -183,9 +183,9 @@
                                 Date: <a href="#">2021-02-21</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">0.5
+                                    href="#">3.5
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">125</a></span>
+                                    <span class="post-words">words:<a href="#">814</a></span>
                                     
                                         <span class="post-category">
                                 Category:
@@ -201,29 +201,56 @@
                                 
                         </header>
                         
-                            <img class="post-feature-image" src="https://cdn.jsdelivr.net/gh/QCenjoyLL/orange@latest/2020/09/16/3cc4f024e03fd129850c87de18001d1e.png" alt="">
+                            <img class="post-feature-image" src="https://ae01.alicdn.com/kf/UTB8lkzusFPJXKJkSahVq6xyzFXaX.jpg" alt="">
                           
                         <div class="post-content">
-                            <h4 id="目标">目标</h4>
-<p>为github pages添加www子域www.moeo.info。</p>
-<h4 id="更新域名信息">更新域名信息</h4>
+                            <h2 id="说明">说明</h2>
+<p>Gitalk 是一个基于 GitHub Issue 和 Preact 开发的评论插件。</p>
+<h5 id="特性">特性</h5>
+<ul>
+<li>使用 GitHub 登录</li>
+<li>支持多语言 [en, zh-CN, zh-TW, es-ES, fr, ru, de, pl, ko]</li>
+<li>支持个人或组织</li>
+<li>无干扰模式（设置 distractionFreeMode 为 true 开启）</li>
+<li>快捷键提交评论 （cmd|ctrl + enter）</li>
+<li>博客同步后，每一篇需要你手动去激活评论，别人才能评论。</li>
+</ul>
+<p>配置好后，页面最终效果(https://gitalk.github.io/)。</p>
+<p>Disqus是商业插件，可以使用免费版本，用的人很多，而且注册时不需要提供手机号。</p>
+<img src="https://cdn.sspai.com/2020/12/25/b58881c0039f94ad26162a407723f701.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt="img" style="zoom:67%;" />
+<h2 id="gitalk使用">Gitalk使用</h2>
 <ol>
-<li>需要到域名注册商处，如图修改域名记录。</li>
+<li>选择一个公共github存储库用于存储评论。</li>
+<li>创建 <strong>GitHub Application</strong>，如果没有 <a href="https://github.com/settings/applications/new">点击这里申请</a>，<code>Authorization callback URL</code> 填写当前使用插件页面的域名。</li>
 </ol>
-<img src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210220220153.png" style="zoom:80%;" />
-<ol start="2">
-<li>域名更新之后，需要更新配置CNAME 文件，或者直接在设置中更新域名</li>
-</ol>
-<img src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210220220612.png" style="zoom:50%;" />
-<p>注意：要开启 HTTPS 加密，需要生成证书文件，官方文档是最多要等待24小时。</p>
+<img src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210220230359.png" style="zoom:30%;" />
 <ol start="3">
-<li>在gridea中更新域名</li>
+<li>成功以后记下Client ID，Client secrets</li>
 </ol>
-<img src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210220224810.png" style="zoom:30%;" />
-4. 开启HTTPS 加密后，可能需要手动更新Github域名
-<img src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210220231746.png" style="zoom:50%;" />
-<p><a href="https://docs.github.com/cn/github/working-with-github-pages/about-custom-domains-and-github-pages">参考文章1</a></p>
-<p><a href="https://segmentfault.com/a/1190000011203711">参考文章2</a></p>
+<img src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210220230529.png" style="zoom:50%;" />
+<h2 id="gitalk安装">Gitalk安装</h2>
+<p>官方的安装方式有2种，但是Gridea，可以直接配置信息输入。</p>
+<img src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210220234139.png" style="zoom:30%;" />
+<p>注意：博客同步后，每一篇需要你手动去激活评论，也就是在评论的地方需要你使用Github先登陆一下，这样就完成了初始化，别人才能评论哟。</p>
+<h2 id="注册及配置-disqus">注册及配置 Disqus</h2>
+<p>前往 <a href="https://blog.disqus.com/">Disqus 官网</a> 注册完成后，选择 <strong>I want to install Disqus on my site</strong></p>
+<img src="https://cdn.sspai.com/2020/12/25/4cc5bf99e956c325e6a0f98ebfd1f368.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt="img" style="zoom:70%;" />
+<p>填写自己的网站信息，输入域名即可。</p>
+<p>![img](https://cdn.sspai.com/2020/12/25/3b68cafd48c384e9fe5ba43e89b486bf.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1 style=&quot;zoom:70%;&quot; /)选择订阅计划（可以免费体验 30 天）</p>
+<img src="https://cdn.sspai.com/2020/12/25/af4282857422a2743bc59f86927f0d68.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt="img" style="zoom:70%;" />
+<p>由于我的博客是使用 Gridea 配合搭建的，这里可以先不用去选择。</p>
+<p>![img](https://cdn.sspai.com/2020/12/25/5cb43a67e0f7b043e781d6b640e5128a.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1 style=&quot;zoom:70%;&quot; /)</p>
+<p>直接前往  <a href="https://disqus.com/api/applications/">Disqus API Resources</a> 新建一个 Application</p>
+<p>![img](https://cdn.sspai.com/2020/12/25/095ab78b85fdbf6fee561a4f976d3e6b.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1 style=&quot;zoom:70%;&quot; /)将基础信息完善后，点击 <strong>Redister my application</strong> 确认</p>
+<p><img src="https://cdn.sspai.com/2020/12/25/6125014d00ac6a72af38e798c490ff8f.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt="img" style="zoom:70%;" />基础信息完善后，进入API 信息页面，在「 Details 」中获取你的 API Keys 与 API Secrets 并复制到剪贴板和其他文本上</p>
+<p>![img](https://cdn.sspai.com/2020/12/25/8b73a6fb00659d3c7762845ad5340aa8.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1 style=&quot;zoom:70%;&quot; /)接着切换到「 Settings 」中 <strong>Domains</strong> ，设置域名白名单防止其他用户滥用你的 API ，还能防止某些安全隐患。</p>
+<p>![img](https://cdn.sspai.com/2020/12/25/1bbddeff1a23ed29b92adb1d0d7d8c10.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1 style=&quot;zoom:70%;&quot; /)信息全部完善后，直接打开已安装的 Gridea 应用找到「 远程 」中 <strong>评论配置。</strong></p>
+<p><img src="https://cdn.sspai.com/2020/12/25/35b2b31f947860ad064df731997bec90.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt="img" style="zoom:70%;" />输入 Disqus 创建账号时填写的 Shortname (Website Name)，同时复制 API 信息页面中的 API Keys 与 API Secrets 对应 Gridea 中的 apikey 和 api ，确认后保存即可。</p>
+<p>点击应用左下角的「 同步 」，等待同步完成后访问自己的博客文章就可以看到文章最底部的 Disqus 评论功能。</p>
+<p>![img](https://cdn.sspai.com/2020/12/25/1b97c194ccbcb0d6a47736e4f15202fc.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1 style=&quot;zoom:70%;&quot; /)</p>
+<h2 id="disqus-评论数据">Disqus 评论数据</h2>
+<p>前往 Disqus 中的 Analytics 数据中心可以查看用户在访问博客文章时的留言评论信息，可帮助博主更好地了解受众与互动内容。</p>
+<p>![img](https://cdn.sspai.com/2020/12/25/67e230619f530e159c5aa84f8eb00618.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1 style=&quot;zoom:70%;&quot; /)</p>
 
                         </div>
                         
@@ -231,16 +258,14 @@
                                 <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#%E7%9B%AE%E6%A0%87">目标</a></li>
-<li><a href="#%E6%9B%B4%E6%96%B0%E5%9F%9F%E5%90%8D%E4%BF%A1%E6%81%AF">更新域名信息</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a href="#%E8%AF%B4%E6%98%8E">说明</a><br>
+*<br>
+*<br>
+* <a href="#%E7%89%B9%E6%80%A7">特性</a></li>
+<li><a href="#gitalk%E4%BD%BF%E7%94%A8">Gitalk使用</a></li>
+<li><a href="#gitalk%E5%AE%89%E8%A3%85">Gitalk安装</a></li>
+<li><a href="#%E6%B3%A8%E5%86%8C%E5%8F%8A%E9%85%8D%E7%BD%AE-disqus">注册及配置 Disqus</a></li>
+<li><a href="#disqus-%E8%AF%84%E8%AE%BA%E6%95%B0%E6%8D%AE">Disqus 评论数据</a></li>
 </ul>
 </li>
 </ul>
@@ -253,9 +278,9 @@
                                                         <span style="margin-right:15px">
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
-                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.moeo.info/-cXAdcbxy/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.moeo.info/-cXAdcbxy/&sharesource=qzone&title=Gridea ＋ Github Pages 添加自定义域名&pics=https://www.moeo.info/images/avatar.png?v=1613833900431&summary="><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://www.moeo.info/-cXAdcbxy/&sharesource=weibo&title=Gridea ＋ Github Pages 添加自定义域名 + " - " + &pic="https://www.moeo.info/images/avatar.png?v=1613833900431 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.moeo.info/I7u7kKHBJ/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.moeo.info/I7u7kKHBJ/&sharesource=qzone&title=Gridea添加Gitalk，Disqus评论系统&pics=https://www.moeo.info/images/avatar.png?v=1613833900431&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://www.moeo.info/I7u7kKHBJ/&sharesource=weibo&title=Gridea添加Gitalk，Disqus评论系统 + " - " + &pic="https://www.moeo.info/images/avatar.png?v=1613833900431 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -282,9 +307,13 @@
                                                                                 <!---->
                                                                                 <section class="post-nav">
                                                                                     
+                                                                                        <a class="prev" rel="prev" href="https://www.moeo.info/-cXAdcbxy/">
+                                                                                            Gridea ＋ Github Pages 添加自定义域名
+                                                                                        </a>
+                                                                                        
                                                                                             
-                                                                                                <a class="next" rel="next" href="https://www.moeo.info/I7u7kKHBJ/">
-                                                                                                    Gridea添加Gitalk，Disqus评论系统
+                                                                                                <a class="next" rel="next" href="https://www.moeo.info/U6wL9oGRi/">
+                                                                                                    Gridea主题代码完善
                                                                                                 </a>
                                                                                                 
                                                                                 </section>
