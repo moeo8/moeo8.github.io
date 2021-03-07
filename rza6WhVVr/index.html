@@ -2,10 +2,9 @@
 <html>
 
 <head>
-    
-                <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <title>
-    Friends | 温故而知新
+    温故而知新
 </title>
 <!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -47,7 +46,6 @@
                                 })();
                             </script>
                             
-                    
 </head>
 
 <body>
@@ -171,24 +169,144 @@
                 <div class="container">
                     <article class="post-wrap">
                         <header class="post-header">
-                            <h1 class="post-title zh">
-                                &#x53CB;&#x94FE;
+                            <h1 class="post-title">
+                                ADB连接Android设备
                             </h1>
-                            <h1 class="post-title en">
-                                Friends
-                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        温故而知新
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2021-03-07</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">1.6
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">422</a></span>
+                                    
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
                         </header>
+                        
+                            <img class="post-feature-image" src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210307222847.png" alt="">
+                          
                         <div class="post-content">
+                            <h2 id="三种连接方式">三种连接方式：</h2>
+<h3 id="一-wifi连接同一个局域网">一、WiFi连接（同一个局域网）</h3>
+<p>与电脑在同一局域网内，Android设备连接WiFi，然后adb命令#adb connect &lt;设备IP&gt;</p>
+<h3 id="二-usb数据线连接">二、USB数据线连接</h3>
+<p>此种连接要有相应的驱动才行（应该安装phoenixsuit就可以通过数据线来通过adb连接设备，有的不用安装）</p>
+<h3 id="三-串口连接">三、串口连接</h3>
+<p>需要借助 USB 线与电脑连接。</p>
+<h2 id="usb-数据线连接">USB 数据线连接</h2>
+<h3 id="一-确保android-设备的开发者选项和-usb-调试模式已开启">一、确保Android 设备的开发者选项和 USB 调试模式已开启</h3>
+<p>「设置」-「开发者选项」-「Android 调试」查看。开发者选项，点允许usb调试，然后就可以连上电脑了<br>
+如果在设置里找不到开发者选项，在「设置」-「关于手机」连续点击「版本号」7 次。</p>
+<h3 id="二-安装驱动设备连接">二、安装驱动，设备连接</h3>
+<ol>
+<li>查看设备连接情况</li>
+</ol>
+<blockquote>
+<p>C:\tmp\adb&gt;adb devices<br>
+List of devices attached<br>
+55bde335        unauthorized</p>
+</blockquote>
+<ol start="2">
+<li>在手机上授权，即可成功连接</li>
+</ol>
+<blockquote>
+<p>C:\tmp\adb&gt;adb devices<br>
+List of devices attached<br>
+55bde335        device</p>
+</blockquote>
+<h2 id="wifi-无线连接">WiFi 无线连接</h2>
+<h3 id="第一步-打开usb-调试模式">第一步 打开USB 调试模式</h3>
+<p>Android设备开启USB调试，并且通过USB线连接到电脑。</p>
+<h3 id="第二步-设备监听-tcpip-连接">第二步 设备监听 TCP/IP 连接：</h3>
+<p>在终端执行以下命令”adb tcpip 5555“。</p>
+<h3 id="第三步通过-ip-地址连接设备">第三步，通过 IP 地址连接设备：</h3>
+<p>在终端执行以下命令”adb connect 192.168.1.110“(192.168.1.110为Android设备的IP地址)。此时拔出USB线，应该就可以adb通过wifi调试Android设备。</p>
+<p>如果连接不了，请确认 Android 设备与电脑是连接到了同一个 WiFi，然后再次执行 adb connect 那一步；<br>
+如果还是不行的话，通过 adb kill-server 重新启动 adb 然后从头再来一次试试。</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%89%E7%A7%8D%E8%BF%9E%E6%8E%A5%E6%96%B9%E5%BC%8F">三种连接方式：</a>
+<ul>
+<li><a href="#%E4%B8%80-wifi%E8%BF%9E%E6%8E%A5%E5%90%8C%E4%B8%80%E4%B8%AA%E5%B1%80%E5%9F%9F%E7%BD%91">一、WiFi连接（同一个局域网）</a></li>
+<li><a href="#%E4%BA%8C-usb%E6%95%B0%E6%8D%AE%E7%BA%BF%E8%BF%9E%E6%8E%A5">二、USB数据线连接</a></li>
+<li><a href="#%E4%B8%89-%E4%B8%B2%E5%8F%A3%E8%BF%9E%E6%8E%A5">三、串口连接</a></li>
+</ul>
+</li>
+<li><a href="#usb-%E6%95%B0%E6%8D%AE%E7%BA%BF%E8%BF%9E%E6%8E%A5">USB 数据线连接</a>
+<ul>
+<li><a href="#%E4%B8%80-%E7%A1%AE%E4%BF%9Dandroid-%E8%AE%BE%E5%A4%87%E7%9A%84%E5%BC%80%E5%8F%91%E8%80%85%E9%80%89%E9%A1%B9%E5%92%8C-usb-%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F%E5%B7%B2%E5%BC%80%E5%90%AF">一、确保Android 设备的开发者选项和 USB 调试模式已开启</a></li>
+<li><a href="#%E4%BA%8C-%E5%AE%89%E8%A3%85%E9%A9%B1%E5%8A%A8%E8%AE%BE%E5%A4%87%E8%BF%9E%E6%8E%A5">二、安装驱动，设备连接</a></li>
+</ul>
+</li>
+<li><a href="#wifi-%E6%97%A0%E7%BA%BF%E8%BF%9E%E6%8E%A5">WiFi 无线连接</a>
+<ul>
+<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E6%89%93%E5%BC%80usb-%E8%B0%83%E8%AF%95%E6%A8%A1%E5%BC%8F">第一步 打开USB 调试模式</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E8%AE%BE%E5%A4%87%E7%9B%91%E5%90%AC-tcpip-%E8%BF%9E%E6%8E%A5">第二步 设备监听 TCP/IP 连接：</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%E9%80%9A%E8%BF%87-ip-%E5%9C%B0%E5%9D%80%E8%BF%9E%E6%8E%A5%E8%AE%BE%E5%A4%87">第三步，通过 IP 地址连接设备：</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                            </div>
                             
                                 
-                                        
-                        </div>
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.moeo.info/rza6WhVVr/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.moeo.info/rza6WhVVr/&sharesource=qzone&title=ADB连接Android设备&pics=https://www.moeo.info/images/avatar.png?v=1615123799077&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://www.moeo.info/rza6WhVVr/&sharesource=weibo&title=ADB连接Android设备 + " - " + &pic="https://www.moeo.info/images/avatar.png?v=1615123799077 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://www.moeo.info/oGX0oCqZ2/">
+                                                                                                    Vercel ＋ Github仓库全自动部署Hexo 
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
                     </article>
                 </div>
-            </div>
-            
                 
-                            <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+                    
+                                <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
 <script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
 
 <div id="disqus_thread" style="width: 100%;"></div>
@@ -203,9 +321,12 @@
     }
     var dsqjs = new DisqusJS(options)
 </script>
-                                
                                     
                                         
+                                            
+            </div>
+    </div>
+    </div>
     </div>
     
         <footer id="footer" class="footer">
@@ -270,6 +391,10 @@
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
+        </div>
 </body>
+<script>
+    scroll();
+</script>
 
 </html>
