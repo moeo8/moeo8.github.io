@@ -167,33 +167,232 @@
 
             <div class="main">
                 <div class="container">
-                    <div class="post-wrap archive">
-                        
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                flexget配置记录
+                            </h1>
                             
-                                <h3>
-                                    2021
-                                </h3>
-                                
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        温故而知新
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2021-03-09</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">1.8
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">294</a></span>
                                     
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
+                        
+                            <img class="post-feature-image" src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210309220205.png" alt="">
+                          
+                        <div class="post-content">
+                            <h3 id="记录用配置">记录用配置</h3>
+<pre><code>pre-installed dependencies for plugins
+telegram,cfscraper,convert_magnet,decompress,transmission,deluge,irc
 
-                                        <article class="archive-item">
-                                            <a class="archive-item-link" href="https://www.moeo.info/oGX0oCqZ2/">
-                                                Vercel ＋ Github仓库全自动部署Hexo 
-                                            </a>
-                                            <span class="archive-item-date">2021-02-22 </span>
-                                        </article>
+web_server:
+  bind: 0.0.0.0
+  port: 5050
+  web_ui: yes
+
+templates:
+  freespace:
+    free_space:
+      path: /data
+      space: 15000
+  qb:
+    qbittorrent:
+      path: /home/moeo/tmp/
+      host: 192.168.0.1
+      port: 8080
+      username: admin
+      password: admin888
+  de:
+    Requires deluge-client.
+    deluge:
+	    host: http://192.168.1.102:9091/transmission/web/
+	    port: 9091
+	    user: someone
+      password: &quot;deluge&quot;
+      path: /data
+  tr:
+     requires the transmission-rpc library
+    transmission:
+      host: http://192.168.0.1:9091/transmission/web/
+      port: 9091
+
+schedules:
+#https://flexget.com/Plugins/Daemon/scheduler
+  - tasks: '*' #[list, of, tasks]
+    interval:
+      minutes: 1
+  - tasks: 'Update-Queue'
+    interval:
+      hours: 3
+  - tasks: 'Update-trakt-*'
+    interval:
+      days: 1
+      at_time: 4:43 am
+	  
+tasks:
+#
+  notify:
+    entries:
+      message: Notification body.
+      via:
+        - telegram:
+            bot_token: token
+            parse_mode: markdown
+            disable_previews: no
+            recipients:
+              - username: my-user-name
+              - group: my-group-name
+              - fullname:
+                  first: my-first-name
+                  sur: my-sur-name
+  BHD:
+    rss: https://beyond-hd.me/rss/
+    accept_all: no
+    series:
+      - some series 1
+      - some series 2:
+            begin: 2021-03-05
+           set:
+              tvdb_id: &lt;tvdb_id&gt;
+#https://flexget.com/Plugins/thetvdb_lookup
+#https://flexget.com/Plugins/series/begin
+      settings:
+        720p:
+          quality: 720p hdtv|webdl
+          set:
+            path: /media/diska/incomplete/
+            move_completed_path: &quot;/media/diska/TV/{{series_name}}/&quot;
+            label: 720p
+        hdtv:
+          quality: hdtv &lt;720p
+          set:
+            path: /media/diskb/incomplete/
+            move_completed_path: &quot;/media/diskb/TV/{{series_name}}/Season {{series_season}}/&quot;
+            label: tv
+      720p:
+        - name 1
+        - name 2
+      hdtv:
+        - name 3
+        - name 4:
+          set:
+            move_completed_path: /media/diskb/otherfolder/
+            queue_to_top: yes
+    content_size:
+      min: 500
+      max: 10000
+      strict: no
+	  download: /data
+    template:
+      - qb
+ 	  deluge: 
+	    host: locahost
+	    port: 13222
+	    user: someone
+      password: &quot;deluge&quot;
+
+      path: /data
+</code></pre>
+<h3 id="flexget高级应用">flexget高级应用</h3>
+<p>https://flexget.com/Cookbook/</p>
+<h3 id="flexget-irc插件配置">flexget irc插件配置</h3>
+<p>https://flexget.com/Plugins/Daemon/irc</p>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E8%AE%B0%E5%BD%95%E7%94%A8%E9%85%8D%E7%BD%AE">记录用配置</a></li>
+<li><a href="#flexget%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8">flexget高级应用</a></li>
+<li><a href="#flexget-irc%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE">flexget irc插件配置</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                            </div>
+                            
+                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.moeo.info/O5KI6xLVh/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.moeo.info/O5KI6xLVh/&sharesource=qzone&title=flexget配置记录&pics=https://www.moeo.info/images/avatar.png?v=1615304996479&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://www.moeo.info/O5KI6xLVh/&sharesource=weibo&title=flexget配置记录 + " - " + &pic="https://www.moeo.info/images/avatar.png?v=1615304996479 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://www.moeo.info/rza6WhVVr/">
+                                                                                                    ADB连接Android设备
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
+                </div>
+                
+                    
+                                <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+
+<div id="disqus_thread" style="width: 100%;"></div>
+
+<script>
+    var options = {
+        shortname: 'Bruitiste',
+        apikey: 'xcRPMnKbzSKErfo6dqEhoPsPT2wzvoZ4kfEuMf5sl1mWpOpZA9HlafrNio8G2bdS',
+    }
+    if ('https://disqus.com/api/oauth/2.0/authorize/') {
+        options.api = 'https://disqus.com/api/oauth/2.0/authorize/'
+    }
+    var dsqjs = new DisqusJS(options)
+</script>
+                                    
                                         
                                             
-                                                
-                    </div>
-                    <div class="pagination-container">
-                        
-                                                
-                                                        
-                                                                
-                    </div>
-                </div>
             </div>
+    </div>
+    </div>
     </div>
     
         <footer id="footer" class="footer">
@@ -260,5 +459,8 @@
                 </script>
         </div>
 </body>
+<script>
+    scroll();
+</script>
 
 </html>
