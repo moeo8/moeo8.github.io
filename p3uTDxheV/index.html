@@ -167,59 +167,167 @@
 
             <div class="main">
                 <div class="container">
-                    <div class="post-wrap tags">
+                    <article class="post-wrap">
+                        <header class="post-header">
+                            <h1 class="post-title">
+                                debian无GUI开启qbitorrent的RSS功能
+                            </h1>
+                            
+                                <!--en-->
+                                <div class="post-meta en">
+                                    Author:
+                                    <a itemprop="author" rel="author" href="/">
+                                        温故而知新
+                                    </a>
+                                    <span class="post-time">
+                                Date: <a href="#">2021-03-10</a>
+                            </span>
+                                    <span class="post-readtime">Reading Time:<a
+                                    href="#">1.5
+                                    mins</a></span>
+                                    <span class="post-words">words:<a href="#">393</a></span>
+                                    
+                                        <span class="post-category">
+                                Category:
+                                
+                                <a href="https://www.moeo.info/tag/pt/">pt</a>
+                                
+                            </span>
+                                        
+                                            Views:
+                                            <span data-hk-page="current"> - </span>
+                                            
+                                </div>
+                                
+                        </header>
                         
-                            <a href="https://www.moeo.info/tag/pt/">
-                                <p class="post-title">
-                                    <i class="fa fa-tags" aria-hidden="true"> pt</i>
-                                </p>
-                            </a>
+                            <img class="post-feature-image" src="https://cdn.jsdelivr.net/gh/moeo8/PicGo/img/20210310013208.png" alt="">
+                          
+                        <div class="post-content">
+                            <h3 id="在线方式">在线方式</h3>
+<p>在线的方式要求你必须拥有公网IP，拥有动态域名，qBittorrent设置的WebUI监听端口已转发到公网，并最好有动态域名对应的SSL证书。具体设置方式如下：</p>
+<ol>
+<li>
+<p>在qBittorrent 的Web UI设置中，启用<code>使用 HTTPS 而不是 HTTP</code>，并设置SSL证书的密钥的路径（证书和密钥可以是自己使用工具签名的，也可以是阿里云、LetsEncrypt等申请的），如果是docker安装的，注意路径要使用映射后的路径。</p>
+</li>
+<li>
+<p>在qBittorrent 的Web UI设置中，勾选<code>启用cookie安全标志</code>和<code>Add custom HTTP headers</code>，并添加以下内容：<br>
+Access-Control-Allow-Credentials: true<br>
+Access-Control-Allow-Origin: https://czbix.github.io</p>
+</li>
+<li>
+<p>访问https://czbix.github.io/qb-web/，<code>Base URL</code>中输入你在公网上访问qBittorrent的地址，然后输入用户名和密码即可。</p>
+</li>
+</ol>
+<h3 id="本地方式">本地方式</h3>
+<ol>
+<li>
+<p>进入Releases · CzBiX/qb-web，下载最新Release的压缩包，解压得到<code>dist</code>文件夹。</p>
+</li>
+<li>
+<p>将<code>dist</code>文件夹放入qBittorrent的<code>config</code>文件夹下。</p>
+</li>
+<li>
+<p>勾选WebUI设置中的<code>使用备用的WebUI</code>，并填入文件路径，如下图所示。注意：如果是Docker安装的，需要填入映射后的路径。<code>dist</code>也可以不放在<code>config</code>文件夹中，但注意放在其他位置时，这个位置要映射在Docker容器中，并准确填入映射后的路径。</p>
+</li>
+</ol>
+<h3 id="出错时怎么办">出错时怎么办</h3>
+<ol>
+<li>在你的qBittorrent管理网址后添加</li>
+</ol>
+<blockquote>
+<p>/api/v2/app/setPreferences?json=%7B%22alternative_webui_enabled%22:false%7D</p>
+</blockquote>
+<p>来访问。</p>
+<ol start="2">
+<li>或者修改<code>config/qBittorrent.conf</code>，找到<code>WebUIAlternativeUIEnabled</code>，将其值修改为<code>false</code>，然后重启qBittorrent。</li>
+</ol>
+
+                        </div>
+                        
+                            <div class="post-toc">
+                                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%9C%A8%E7%BA%BF%E6%96%B9%E5%BC%8F">在线方式</a></li>
+<li><a href="#%E6%9C%AC%E5%9C%B0%E6%96%B9%E5%BC%8F">本地方式</a></li>
+<li><a href="#%E5%87%BA%E9%94%99%E6%97%B6%E6%80%8E%E4%B9%88%E5%8A%9E">出错时怎么办</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                            </div>
                             
-                            <a href="https://www.moeo.info/tag/hexo/">
-                                <p class="post-title">
-                                    <i class="fa fa-tags" aria-hidden="true"> hexo</i>
-                                </p>
-                            </a>
-                            
-                            <a href="https://www.moeo.info/tag/note/">
-                                <p class="post-title">
-                                    <i class="fa fa-tags" aria-hidden="true"> note</i>
-                                </p>
-                            </a>
-                            
-                            <a href="https://www.moeo.info/tag/rOWjDdgpM/">
-                                <p class="post-title">
-                                    <i class="fa fa-tags" aria-hidden="true"> Gridea</i>
-                                </p>
-                            </a>
-                            
-                            <a href="https://www.moeo.info/tag/photo/">
-                                <p class="post-title">
-                                    <i class="fa fa-tags" aria-hidden="true"> photo</i>
-                                </p>
-                            </a>
-                            
-                            <a href="https://www.moeo.info/tag/typora/">
-                                <p class="post-title">
-                                    <i class="fa fa-tags" aria-hidden="true"> typora</i>
-                                </p>
-                            </a>
-                            
-                            <a href="https://www.moeo.info/tag/tv/">
-                                <p class="post-title">
-                                    <i class="fa fa-tags" aria-hidden="true"> tv</i>
-                                </p>
-                            </a>
-                            
-                            <a href="https://www.moeo.info/tag/philosophy/">
-                                <p class="post-title">
-                                    <i class="fa fa-tags" aria-hidden="true"> philosophy</i>
-                                </p>
-                            </a>
-                            
-                    </div>
+                                
+                                                    
+                                                        <!-- Share-->
+                                                        <span style="margin-right:15px">
+                                                    <i class="post-share"></i>
+                                                    <span>Share:</span>
+                                                        <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.moeo.info/p3uTDxheV/"><i class="fa fa-qrcode"></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.moeo.info/p3uTDxheV/&sharesource=qzone&title=debian无GUI开启qbitorrent的RSS功能&pics=https://www.moeo.info/images/avatar.png?v=1615307541790&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://www.moeo.info/p3uTDxheV/&sharesource=weibo&title=debian无GUI开启qbitorrent的RSS功能 + " - " + &pic="https://www.moeo.info/images/avatar.png?v=1615307541790 "><i class="fa fa-weibo "></i></a>
+                                                        
+                                                                </span>
+                                                                <!--en-->
+                                                                <section class="post-tags en ">
+                                                                    <div>
+                                                                        <span>Tag(s):</span>
+                                                                        <span class="tag ">
+                        
+                        
+                        <a href="https://www.moeo.info/tag/pt/">#
+                                                pt
+                                                    </a>
+                                                    
+                                                        
+                                                            </span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <a href="javascript:window.history.back();">back</a>
+                                                                        <span>&dot;</span>
+                                                                        <a href="#">home</a>
+                                                                    </div>
+                                                                </section>
+                                                                
+                                                                                <!---->
+                                                                                <section class="post-nav">
+                                                                                    
+                                                                                            
+                                                                                                <a class="next" rel="next" href="https://www.moeo.info/O5KI6xLVh/">
+                                                                                                    flexget配置记录
+                                                                                                </a>
+                                                                                                
+                                                                                </section>
+                    </article>
                 </div>
+                
+                    
+                                <link rel="stylesheet" href="https://unpkg.com/disqusjs@1.1/dist/disqusjs.css">
+<script src="https://unpkg.com/disqusjs@1.1/dist/disqus.js"></script>
+
+<div id="disqus_thread" style="width: 100%;"></div>
+
+<script>
+    var options = {
+        shortname: 'Bruitiste',
+        apikey: 'xcRPMnKbzSKErfo6dqEhoPsPT2wzvoZ4kfEuMf5sl1mWpOpZA9HlafrNio8G2bdS',
+    }
+    if ('https://disqus.com/api/oauth/2.0/authorize/') {
+        options.api = 'https://disqus.com/api/oauth/2.0/authorize/'
+    }
+    var dsqjs = new DisqusJS(options)
+</script>
+                                    
+                                        
+                                            
             </div>
+    </div>
+    </div>
     </div>
     
         <footer id="footer" class="footer">
@@ -286,5 +394,8 @@
                 </script>
         </div>
 </body>
+<script>
+    scroll();
+</script>
 
 </html>
